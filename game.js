@@ -75,6 +75,15 @@ function checkCookie() {
 			setCookie("fmoney", fmoney, 30);
 		}
 	}
+
+	var fmruong = getCookie("fmruong");
+	if (fmruong != "") {
+		mruong = Number(fmruong);
+	} else {
+		if (fmruong != null) {
+			setCookie("fmruong", fmruong, 30);
+		}
+	}
 }
 document.getElementsByClassName("start")[0].addEventListener("click", function () {
 	document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
@@ -183,7 +192,18 @@ function checkruong() {
 	else {
 		alert("Không đúng");
 	}
+	
+	var fmruong = getCookie("fmruong");
 	mruong = 0;
+	fmruong = mruong;
+
+	if (fmruong != null) {
+		setCookie("fmruong", fmruong, 30);
+
+	}
+
+
+
 	alert(ruongrd);
 }
 
