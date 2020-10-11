@@ -43,7 +43,7 @@ var ruongrd = 0;
 var cruongrd = 0;
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
-function setCookie(hihihi, cvalue, 	) {
+function setCookie(hihihi, cvalue, exdays) {
 	var d = new Date();
 	d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000000));
 	//	d.setTime(d.getTime() + (exdays * 48 * 60 * 60 * 1000));
@@ -193,7 +193,7 @@ function checkruong() {
 	else {
 		alert("Không đúng");
 	}
-	
+
 	var fmruong = getCookie("fmruong");
 	mruong = 0;
 	fmruong = mruong;
