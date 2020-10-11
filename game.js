@@ -43,9 +43,10 @@ var ruongrd = 0;
 var cruongrd = 0;
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
-function setCookie(hihihi, cvalue, exdays) {
+function setCookie(hihihi, cvalue, 	) {
 	var d = new Date();
 	d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000000));
+	//	d.setTime(d.getTime() + (exdays * 48 * 60 * 60 * 1000));
 	var expires = "expires=" + d.toGMTString();
 	document.cookie = hihihi + "=" + cvalue + ";" + expires + ";path=/";
 }
