@@ -170,6 +170,15 @@ document.getElementsByClassName("ruong5")[0].addEventListener("click", function 
 function checkruong() {
 	if (cruongrd === ruongrd) {
 		alert("Đúng rồi");
+		var fmoney = getCookie("fmoney");
+		money += 1000;
+		fmoney = money;
+
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 	}
 	else {
 		alert("Không đúng");
