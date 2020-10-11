@@ -49,9 +49,9 @@
 			line-height: 200px;
 			background-color: rgb(114, 111, 255);
 			margin: 20px;
-			font-size: 30px;
+			font-size: 26px;
 			border-radius: 20%;
-			cursor: pointer;
+			word-break: break-all;
 		}
 
 		#mg div:hover {
@@ -62,9 +62,9 @@
 			display: none;
 		}
 
-		.round-3cay {
+		.round-game {
 			width: 80%;
-			height: 550px;
+			height: 650px;
 			background-color: rgb(114, 111, 255);
 			position: relative;
 			margin: 0 auto;
@@ -90,7 +90,7 @@
 			font-size: 20px;
 		}
 
-		#selectmoney div:hover {
+		#selectmoney div:hover, #ruongmayman div:hover {
 			background-color: rgb(209, 111, 255);
 		}
 
@@ -102,6 +102,30 @@
 			margin-left: 40%;
 		}
 
+		#ruongmayman {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+
+	
+		}
+
+		#ruongmayman div {
+			width: 160px;
+			height: 160px;
+			background-color: rgb(114, 111, 255);
+			margin: 10px;
+			border-radius: 20%;
+			font-size: 20px;
+		}
+
+		#ruongmayman span {
+			display: flex;
+			align-items: center;
+			height: 100%;
+			text-align: center;
+			margin-left: 30%;
+		}
 		.bdmain {
 			background-color: rgb(79, 255, 62);
 			padding: 30px;
@@ -184,6 +208,9 @@
 			<div class="mg-lieng">
 				<p>Liêng</p>
 			</div>
+			<div class="mg-ruong">
+				<p>Rương may mắn</p>
+			</div>
 		</div>
 		<div id="selectmoney">
 			<div class="m-500"> <span>
@@ -204,7 +231,7 @@
 		</div>
 		<div class="g-main">
 			<h1 style="color:red;text-align: center;" class="namegame"></h1>
-			<div class="round-3cay">
+			<div class="round-game">
 				<input type="button" class="bdmain" value="Bắt đầu">
 				<div class="player1"> <img src="#" class="card card1" /> <img src="#" class="card card2" /> <img src="#"
 						class="card card3" /> <img src="#" class="card card7" /> <img src="#" class="card card8" />
@@ -217,6 +244,24 @@
 				<div class="player2"> <img src="#" class="card card4" /> <img src="#" class="card card5" /> <img src="#"
 						class="card card6" /> <img src="#" class="card card9" /> <img src="#" class="card card10" />
 					<p class="statusp2" style="font-size: 20px;"></p> <img src="#" class="status" width="100px" />
+				</div>
+
+			</div>
+			<div id="ruongmayman">
+				<div class="ruong1">
+					<span>Rương 1</span>
+				</div>
+				<div class="ruong2">
+					<span>Rương 2</span>
+				</div>
+				<div class="ruong3">
+					<span>Rương 3</span>
+				</div>
+				<div class="ruong4">
+					<span>Rương 4</span>
+				</div>
+				<div class="ruong5">
+					<span>Rương 5</span>
 				</div>
 			</div>
 		</div>

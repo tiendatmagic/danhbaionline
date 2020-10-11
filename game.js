@@ -38,6 +38,9 @@ var arrlieng1 = [];
 var arrlieng2 = [];
 var lp1;
 var lp2;
+var mruong = 1;
+var ruongrd = 0;
+var cruongrd = 0;
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
 function setCookie(hihihi, cvalue, exdays) {
@@ -96,6 +99,85 @@ document.getElementsByClassName("mg-lieng")[0].addEventListener("click", functio
 	mg();
 	selectgame = 3;
 });
+document.getElementsByClassName("mg-ruong")[0].addEventListener("click", function () {
+	document.getElementById("mg").style.display = 'none';
+	document.getElementsByClassName("g-main")[0].style.display = 'block';
+	document.getElementById("ruongmayman").style.display = 'flex';
+	document.getElementsByClassName("round-game")[0].style.display = 'none';
+	ruongrd = Math.ceil(Math.random() * 5);
+	cruongrd = 0;
+
+});
+
+
+
+document.getElementsByClassName("ruong1")[0].addEventListener("click", function () {
+	if (mruong === 1) {
+		cruongrd = 1;
+		checkruong();
+	}
+	else {
+		alert("Hết số lần mở rương");
+	}
+});
+
+
+document.getElementsByClassName("ruong2")[0].addEventListener("click", function () {
+	if (mruong === 1) {
+		cruongrd = 2;
+		checkruong();
+	}
+	else {
+		alert("Hết số lần mở rương");
+	}
+});
+
+
+document.getElementsByClassName("ruong3")[0].addEventListener("click", function () {
+
+	if (mruong === 1) {
+		cruongrd = 3;
+		checkruong();
+	}
+	else {
+		alert("Hết số lần mở rương");
+	}
+});
+
+
+document.getElementsByClassName("ruong4")[0].addEventListener("click", function () {
+
+	if (mruong === 1) {
+		cruongrd = 4;
+		checkruong();
+	}
+	else {
+		alert("Hết số lần mở rương");
+	}
+});
+
+
+document.getElementsByClassName("ruong5")[0].addEventListener("click", function () {
+	if (mruong === 1) {
+		cruongrd = 5;
+		checkruong();
+	}
+	else {
+		alert("Hết số lần mở rương");
+	}
+});
+
+function checkruong() {
+	if (cruongrd === ruongrd) {
+		alert("Đúng rồi");
+	}
+	else {
+		alert("Không đúng");
+	}
+	mruong = 0;
+	alert(ruongrd);
+}
+
 document.getElementsByClassName("bdmain")[0].addEventListener("click", phatbai);
 document.getElementsByClassName("m-500")[0].addEventListener("click", function () {
 	setup();
