@@ -109,6 +109,15 @@ document.getElementsByClassName("mg-lieng")[0].addEventListener("click", functio
 	mg();
 	selectgame = 3;
 });
+
+document.getElementsByClassName("mg-baucua")[0].addEventListener("click", function () {
+	document.getElementById("mg").style.display = 'none';
+	document.getElementsByClassName("g-main")[0].style.display = 'block';
+	
+	//document.getElementById("ruongmayman").style.display = 'flex';
+	document.getElementById("baucua").style.display = 'flex';
+	document.getElementsByClassName("round-game")[0].style.display = 'none';
+});
 document.getElementsByClassName("mg-ruong")[0].addEventListener("click", function () {
 	document.getElementById("mg").style.display = 'none';
 	document.getElementsByClassName("g-main")[0].style.display = 'block';
@@ -377,6 +386,8 @@ function phatbai() {
 		document.getElementsByClassName("card6")[0].setAttribute("src", "./img/b2fv.gif");
 		liengg = setTimeout(lieng, 10000);
 	}
+
+
 }
 document.getElementsByClassName("xb")[0].addEventListener("click", xb);
 
