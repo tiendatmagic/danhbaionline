@@ -515,7 +515,7 @@ function rttm() {
 	if (ca10 >= 10) {
 		ca10 = 10;
 	}
-	if (ca1 === 1 && ca2 === 10 || ca1 === 10 && ca2 === 1) {
+	if (ca1 === 1 && ca2 === 10 && rt === 0 || ca1 === 10 && ca2 === 1 && rt === 0) {
 		xd1 = 2;
 	}
 	if (ca1 === 1 && ca2 === 1) {
@@ -639,6 +639,17 @@ function check() {
 			document.getElementsByClassName("statusp1")[0].innerText = ll1 + " điểm";
 			document.getElementsByClassName("statusp2")[0].innerText = "Ba tiên";
 		}
+
+		if (ca1 == 10 && ca2 == 10 && ca3 == 10 && ca4 == 10 && ca5 == 10 && ca6 == 10) {
+			ll2 = 30;
+			pll1 = String(pl1);
+			pll2 = String(pl2);
+			ll1 = 30;
+			document.getElementsByClassName("statusp1")[0].innerText = "Ba tiên";
+			document.getElementsByClassName("statusp2")[0].innerText = "Ba tiên";
+			alert("huề");
+		}
+
 		if (pl1 != 30 && pl2 != 30) {
 			pll1 = String(pl1);
 			pll2 = String(pl2);
@@ -708,7 +719,7 @@ function checkcard() {
 			document.getElementsByClassName("status")[0].src = "./win.png";
 			document.getElementsByClassName("status")[1].style.display = 'block';
 			document.getElementsByClassName("status")[1].src = "./lose.png";
-		} else if (ll1 == ll2) {
+		} else if (ll1 === ll2) {
 			var fmoney = getCookie("fmoney");
 			money += dc;
 			fmoney = money;
