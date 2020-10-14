@@ -130,11 +130,11 @@
 		}
 
 		#baucua div {
-			width: 360px;
+			width: 250px;
 			height: 160px;
 			background-color: rgb(114, 111, 255);
 			margin: 10px;
-			border-radius: 20%;
+			border-radius: 50%;
 			font-size: 20px;
 		}
 
@@ -211,8 +211,9 @@
 			font-size: 16px;
 		}
 
-		@media only screen and (max-width: 850px) {
-			.round-game {}
+		.naphop p {
+			margin: 10%;
+			float: left
 		}
 	</style>
 </head>
@@ -280,26 +281,28 @@
 
 			</div>
 			<div id="baucua">
-				<div class="r">
-					<span>Rương 1</span>
+				<div class="bc">
+					<span>B 1</span>
 				</div>
-				<div class="r">
-					<span>Rương 2</span>
+				<div class="bc">
+					<span>B 2</span>
 				</div>
-				<div class="r">
-					<span>Rương 3</span>
+				<div class="bc">
+					<span>B 3</span>
 				</div>
 				<div class="naphop">
-
+					<p class="bc1"></p>
+					<p class="bc2"></p>
+					<p class="bc3"></p>
 				</div>
-				<div class="r">
-					<span>Rương 4</span>
+				<div class="bc">
+					<span>B 4</span>
 				</div>
-				<div class="r">
-					<span>Rương 5</span>
+				<div class="bc">
+					<span>B 5</span>
 				</div>
-				<div class="r">
-					<span>Rương 6</span>
+				<div class="bc">
+					<span>B 6</span>
 				</div>
 			</div>
 			<div id="ruongmayman">
@@ -322,6 +325,12 @@
 		</div>
 	</div>
 </div>
+<script>
+	var myArray = ['January', 'February', 'March'];
+	var rand1 = myArray[(Math.random() * myArray.length) | 0];
+	var rand2 = myArray[(Math.random() * myArray.length) | 0];
+
+</script>
 <script src="./game.js"></script>
 <script src="./card.js"></script>
 </body>

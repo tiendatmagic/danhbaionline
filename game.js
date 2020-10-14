@@ -41,6 +41,16 @@ var lp2;
 var mruong = 1;
 var ruongrd = 0;
 var cruongrd = 0;
+var bc1 = 0;
+var bc2 = 0;
+var bc3 = 0;
+var arrbc = [];
+var bca1 = 0;
+var bca2 = 0;
+var bca3 = 0;
+var bca4 = 0;
+var bca5 = 0;
+var bca6 = 0;
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
 function setCookie(hihihi, cvalue, exdays) {
@@ -113,10 +123,11 @@ document.getElementsByClassName("mg-lieng")[0].addEventListener("click", functio
 document.getElementsByClassName("mg-baucua")[0].addEventListener("click", function () {
 	document.getElementById("mg").style.display = 'none';
 	document.getElementsByClassName("g-main")[0].style.display = 'block';
-	
-	//document.getElementById("ruongmayman").style.display = 'flex';
 	document.getElementById("baucua").style.display = 'flex';
 	document.getElementsByClassName("round-game")[0].style.display = 'none';
+	baucua();
+
+
 });
 document.getElementsByClassName("mg-ruong")[0].addEventListener("click", function () {
 	document.getElementById("mg").style.display = 'none';
@@ -214,7 +225,7 @@ function checkruong() {
 
 
 
-	alert(ruongrd);
+
 }
 
 document.getElementsByClassName("bdmain")[0].addEventListener("click", phatbai);
@@ -238,6 +249,39 @@ document.getElementsByClassName("m-5000")[0].addEventListener("click", function 
 	setup();
 	dc = 5000;
 });
+
+document.getElementsByClassName("bc")[0].addEventListener("click",function() {
+	bca1 = 1;
+});
+document.getElementsByClassName("bc")[1].addEventListener("click",function() {
+	bca2 = 1;
+});
+document.getElementsByClassName("bc")[2].addEventListener("click",function() {
+	bca3 = 1;
+});
+document.getElementsByClassName("bc")[3].addEventListener("click",function() {
+	bca4 = 1;
+});
+document.getElementsByClassName("bc")[4].addEventListener("click",function() {
+	bca5 = 1;
+});
+document.getElementsByClassName("bc")[5].addEventListener("click",function() {
+	bca6 = 1;
+});
+function baucua() {
+	bc1 = Math.ceil(Math.random() * 6);
+	bc2 = Math.ceil(Math.random() * 6);
+	bc3 = Math.ceil(Math.random() * 6);
+
+	document.getElementsByClassName("bc1")[0].innerText = bc1;
+	document.getElementsByClassName("bc2")[0].innerText = bc2;
+	document.getElementsByClassName("bc3")[0].innerText = bc3;
+	arrbc = [bc1, bc2, bc3];
+	arrbc.sort(function (a, b) {
+		return a - b;
+	});
+}
+
 
 function setup() {
 	if (selectgame === 1) {
