@@ -123,7 +123,7 @@ document.getElementsByClassName("mg-lieng")[0].addEventListener("click", functio
 document.getElementsByClassName("mg-baucua")[0].addEventListener("click", function () {
 	document.getElementById("mg").style.display = 'none';
 	document.getElementsByClassName("g-main")[0].style.display = 'block';
-	document.getElementById("baucua").style.display = 'flex';
+
 	document.getElementsByClassName("round-game")[0].style.display = 'none';
 	baucua();
 
@@ -268,6 +268,9 @@ document.getElementsByClassName("bc")[4].addEventListener("click",function() {
 document.getElementsByClassName("bc")[5].addEventListener("click",function() {
 	bca6 = 1;
 });
+
+
+
 function baucua() {
 	bc1 = Math.ceil(Math.random() * 6);
 	bc2 = Math.ceil(Math.random() * 6);

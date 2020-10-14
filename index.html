@@ -130,8 +130,8 @@
 		}
 
 		#baucua div {
-			width: 250px;
-			height: 160px;
+			width: 200px;
+			height: 120px;
 			background-color: rgb(114, 111, 255);
 			margin: 10px;
 			border-radius: 50%;
@@ -140,14 +140,37 @@
 
 		#baucua .naphop {
 			width: 100%;
-			height: 260px;
+			height: 200px;
 			background-color: red;
 			margin: 10px;
 
 			font-size: 20px;
 		}
 
+		#dcc {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+		}
 
+		#dcc div {
+			width: 200px;
+			height: 120px;
+			background-color: rgb(114, 111, 255);
+			margin: 10px;
+			border-radius: 50%;
+			font-size: 20px;
+		}
+
+		#dcc span {
+			display: flex;
+			align-items: center;
+			height: 100%;
+			text-align: center;
+			margin-left: 40%;
+		}
 
 		.bdmain {
 			background-color: rgb(79, 255, 62);
@@ -212,8 +235,12 @@
 		}
 
 		.naphop p {
-			margin: 10%;
-			float: left
+			margin: 5%;
+			float: left;
+		}
+
+		.dcc {
+			display: flex;
 		}
 	</style>
 </head>
@@ -280,31 +307,56 @@
 
 
 			</div>
-			<div id="baucua">
-				<div class="bc">
-					<span>B 1</span>
+			<div id="baucuaa">
+
+
+				<div id="baucua">
+					<div class="bc">
+						<span>B 1</span>
+					</div>
+					<div class="bc">
+						<span>B 2</span>
+					</div>
+					<div class="bc">
+						<span>B 3</span>
+					</div>
+					<div class="naphop">
+						<p class="bc1"></p>
+						<p class="bc2"></p>
+						<p class="bc3"></p>
+					</div>
+					<div class="bc">
+						<span>B 4</span>
+					</div>
+					<div class="bc">
+						<span>B 5</span>
+					</div>
+					<div class="bc">
+						<span>B 6</span>
+					</div>
 				</div>
-				<div class="bc">
-					<span>B 2</span>
-				</div>
-				<div class="bc">
-					<span>B 3</span>
-				</div>
-				<div class="naphop">
-					<p class="bc1"></p>
-					<p class="bc2"></p>
-					<p class="bc3"></p>
-				</div>
-				<div class="bc">
-					<span>B 4</span>
-				</div>
-				<div class="bc">
-					<span>B 5</span>
-				</div>
-				<div class="bc">
-					<span>B 6</span>
+
+				<div id="dcc">
+
+					<div class="dc-500">
+						<span>500</span>
+					</div>
+					<div class="dc-1000">
+						<span>1000</span>
+					</div>
+					<div class="dc-2000">
+						<span>2000</span>
+					</div>
+					<div class="dc-3000">
+						<span>3000</span>
+					</div>
+					<div class="dc-5000">
+						<span>5000</span>
+					</div>
+
 				</div>
 			</div>
+
 			<div id="ruongmayman">
 				<div class="ruong1">
 					<span>Rương 1</span>
