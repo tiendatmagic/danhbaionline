@@ -52,7 +52,6 @@ var bca4 = 0;
 var bca5 = 0;
 var bca6 = 0;
 var dcbc = 0;
-var dcc = 0;
 var dcbc1 = 0;
 var dcbc2 = 0;
 var dcbc3 = 0;
@@ -256,26 +255,27 @@ document.getElementsByClassName("m-5000")[0].addEventListener("click", function 
 
 //
 document.getElementsByClassName("dc-500")[0].addEventListener("click", function () {
-	dcbc = 1;
-	dcc = 1;
+	dcbc = 500;
+
 
 });
 document.getElementsByClassName("dc-1000")[0].addEventListener("click", function () {
-	dcbc = 1;
-	dcc = 2;
+	dcbc = 1000;
+
 });
 document.getElementsByClassName("dc-2000")[0].addEventListener("click", function () {
-	dcbc = 1;
-	dcc = 3;
+	dcbc = 2000;
+
+
 });
 document.getElementsByClassName("dc-3000")[0].addEventListener("click", function () {
-	dcbc = 1;
-	dcc = 4;
+	dcbc = 3000;
+
 
 });
 document.getElementsByClassName("dc-5000")[0].addEventListener("click", function () {
-	dcbc = 1;
-	dcc = 5;
+	dcbc = 5000;
+
 });
 //
 document.getElementsByClassName("bc")[0].addEventListener("click", function () {
@@ -283,33 +283,15 @@ document.getElementsByClassName("bc")[0].addEventListener("click", function () {
 		bca1 = 1;
 
 		var fmoney = getCookie("fmoney");
-		if (dcc === 1) {
-			dcbc1 += 500;
-			money -= dcbc1;
-		}
-		else if (dcc === 2) {
-			dcbc1 += 1000;
-			money -= dcbc1;
-		}
-		else if (dcc === 3) {
-			dcbc1 += 2000;
-			money -= dcbc1;
-		}
-		else if (dcc === 4) {
-			dcbc1 += 3000;
-			money -= dcbc1;
-		}
-		else if (dcc === 5) {
-			dcbc1 += 5000;
-			money -= dcbc1;
-		}
+		dcbc1 += dcbc;
+		money -= dcbc1;
 
 		fmoney = money;
 		if (fmoney != null) {
 			setCookie("fmoney", fmoney, 30);
 		}
 		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
-		//dcbc = 0;
+		dcbc = 0;
 	}
 });
 document.getElementsByClassName("bc")[1].addEventListener("click", function () {
@@ -324,7 +306,7 @@ document.getElementsByClassName("bc")[1].addEventListener("click", function () {
 			setCookie("fmoney", fmoney, 30);
 		}
 		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
-		//dcbc = 0;
+		dcbc = 0;
 	}
 });
 document.getElementsByClassName("bc")[2].addEventListener("click", function () {
@@ -397,6 +379,7 @@ function checkbc() {
 		fmoney = money;
 		if (fmoney != null) {
 			setCookie("fmoney", fmoney, 30);
+
 		}
 		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 	}
