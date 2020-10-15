@@ -280,7 +280,7 @@ document.getElementsByClassName("dc-3000")[0].addEventListener("click", function
 
 });
 document.getElementsByClassName("dc-5000")[0].addEventListener("click", function () {
-	dcbc += 5000;
+	//dcbc += 5000;
 
 	ondc = 1;
 });
@@ -288,10 +288,10 @@ document.getElementsByClassName("dc-5000")[0].addEventListener("click", function
 document.getElementsByClassName("bc")[0].addEventListener("click", function () {
 
 	bca1 = 1;
-	dcc += dcbc;
+	//dcc += dcbc;
 	var fmoney = getCookie("fmoney");
 
-	money -= dcc;
+	money -= 5000;
 
 	fmoney = money;
 	if (fmoney != null) {
@@ -300,15 +300,15 @@ document.getElementsByClassName("bc")[0].addEventListener("click", function () {
 	document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 	
 	ondc = 0;
-		
+	//ondc1 +=1;
+	dcbc += 5000;
 });
 document.getElementsByClassName("bc")[1].addEventListener("click", function () {
 
 	bca2 = 1;
-	dcc += dcbc;
 	var fmoney = getCookie("fmoney");
 
-	money -= dcc;
+	money -= dcbc;
 
 	fmoney = money;
 	if (fmoney != null) {
@@ -323,10 +323,9 @@ document.getElementsByClassName("bc")[2].addEventListener("click", function () {
 
 	bca3 = 1;
 
-	dcc += dcbc;
 	var fmoney = getCookie("fmoney");
 
-	money -= dcc;
+	money -= dcbc;
 
 	fmoney = money;
 	if (fmoney != null) {
@@ -341,10 +340,9 @@ document.getElementsByClassName("bc")[3].addEventListener("click", function () {
 
 	bca4 = 1;
 
-	dcc += dcbc;
 	var fmoney = getCookie("fmoney");
 
-	money -= dcc;
+	money -= dcbc;
 
 	fmoney = money;
 	if (fmoney != null) {
@@ -359,10 +357,9 @@ document.getElementsByClassName("bc")[4].addEventListener("click", function () {
 
 	bca5 = 1;
 
-	dcc += dcbc;
 	var fmoney = getCookie("fmoney");
 
-	money -= dcc;
+	money -= dcbc;
 
 	fmoney = money;
 	if (fmoney != null) {
@@ -377,10 +374,9 @@ document.getElementsByClassName("bc")[5].addEventListener("click", function () {
 
 	bca6 = 1;
 
-	dcc += dcbc;
 	var fmoney = getCookie("fmoney");
 
-	money -= dcc;
+	money -= dcbc;
 
 	fmoney = money;
 	if (fmoney != null) {
@@ -406,6 +402,7 @@ function checkbc() {
 		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 	}
 
+	/*
 	if (bca2 === 1 && bc1 === 2 || bca2 === 1 && bc2 === 2 || bca2 === 1 && bc3 === 2) {
 		var fmoney = getCookie("fmoney");
 		money += dcbc * 2;
@@ -459,6 +456,7 @@ function checkbc() {
 		}
 		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 	}
+*/
 	alert("OK");
 }
 
