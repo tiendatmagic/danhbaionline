@@ -62,6 +62,7 @@ var dcbc5 = 0;
 var dcbc6 = 0;
 var timebc;
 var time = 5;
+//var checkbc = 0;
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
 function setCookie(hihihi, cvalue, exdays) {
@@ -289,116 +290,123 @@ document.getElementsByClassName("dc-5000")[0].addEventListener("click", function
 });
 //
 document.getElementsByClassName("bc")[0].addEventListener("click", function () {
+	
+		bca1 = 1;
+		//dcc += dcbc;
+		var fmoney = getCookie("fmoney");
 
-	bca1 = 1;
-	//dcc += dcbc;
-	var fmoney = getCookie("fmoney");
+		money -= ondc;
 
-	money -= ondc;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+		}
 
-	fmoney = money;
-	if (fmoney != null) {
-		setCookie("fmoney", fmoney, 30);
-	}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 
-	document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+		//ondc = 0
+		//ondc1 +=1;
+		dcbc1 += ondc;
+	
 
-	//ondc = 0
-	//ondc1 +=1;
-	dcbc1 += ondc;
 });
 document.getElementsByClassName("bc")[1].addEventListener("click", function () {
+	
+		bca2 = 1;
+		var fmoney = getCookie("fmoney");
 
-	bca2 = 1;
-	var fmoney = getCookie("fmoney");
+		money -= ondc;
 
-	money -= ondc;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 
-	fmoney = money;
-	if (fmoney != null) {
-		setCookie("fmoney", fmoney, 30);
-	}
-	document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
-
-	//	ondc = 0;
-	//ondc1 +=1;
-	dcbc2 += ondc;
+		//	ondc = 0;
+		//ondc1 +=1;
+		dcbc2 += ondc;
+	
 
 });
 document.getElementsByClassName("bc")[2].addEventListener("click", function () {
+	
+		bca3 = 1;
 
-	bca3 = 1;
+		var fmoney = getCookie("fmoney");
 
-	var fmoney = getCookie("fmoney");
+		money -= ondc;
 
-	money -= ondc;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 
-	fmoney = money;
-	if (fmoney != null) {
-		setCookie("fmoney", fmoney, 30);
-	}
-	document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
-
-	//	ondc = 0;
-	//ondc1 +=1;
-	dcbc3 += ondc;
+		//	ondc = 0;
+		//ondc1 +=1;
+		dcbc3 += ondc;
+	
 
 });
 document.getElementsByClassName("bc")[3].addEventListener("click", function () {
+	
+		bca4 = 1;
 
-	bca4 = 1;
+		var fmoney = getCookie("fmoney");
 
-	var fmoney = getCookie("fmoney");
+		money -= ondc;
 
-	money -= ondc;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 
-	fmoney = money;
-	if (fmoney != null) {
-		setCookie("fmoney", fmoney, 30);
-	}
-	document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
-
-	//ondc = 0;
-	//ondc1 +=1;
-	dcbc4 += ondc;
+		//ondc = 0;
+		//ondc1 +=1;
+		dcbc4 += ondc;
+	
 
 });
 document.getElementsByClassName("bc")[4].addEventListener("click", function () {
+	
+		bca5 = 1;
 
-	bca5 = 1;
+		var fmoney = getCookie("fmoney");
 
-	var fmoney = getCookie("fmoney");
+		money -= ondc;
 
-	money -= ondc;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 
-	fmoney = money;
-	if (fmoney != null) {
-		setCookie("fmoney", fmoney, 30);
-	}
-	document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
-
-	//ondc = 0;
-	//ondc1 +=1;
-	dcbc5 += ondc;
+		//ondc = 0;
+		//ondc1 +=1;
+		dcbc5 += ondc;
+	
 
 });
 document.getElementsByClassName("bc")[5].addEventListener("click", function () {
+	
+		bca6 = 1;
 
-	bca6 = 1;
+		var fmoney = getCookie("fmoney");
 
-	var fmoney = getCookie("fmoney");
+		money -= ondc;
 
-	money -= ondc;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 
-	fmoney = money;
-	if (fmoney != null) {
-		setCookie("fmoney", fmoney, 30);
-	}
-	document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
-
-	//ondc = 0;
-	//ondc1 +=1;
-	dcbc6 += ondc;
+		//ondc = 0;
+		//ondc1 +=1;
+		dcbc6 += ondc;
+	
 
 });
 
@@ -628,11 +636,19 @@ function checkbc() {
 	}
 
 	alert("OK");
+	setTimeout(baucuaa, 3000);
 }
 function baucuaa() {
 	clearInterval(timebc);
 	time = 5;
-	document.getElementById("baucuaa").style.display='block';
+	dcbc1 = 0;
+	dcbc2 = 0;
+	dcbc3 = 0;
+	dcbc4 = 0;
+	dcbc5 = 0;
+	dcbc6 = 0;
+
+	document.getElementById("baucuaa").style.display = 'block';
 	document.getElementsByClassName("bc1")[0].style.display = 'none';
 	document.getElementsByClassName("bc2")[0].style.display = 'none';
 	document.getElementsByClassName("bc3")[0].style.display = 'none';
@@ -651,7 +667,7 @@ function baucuaa() {
 	//setTimeout(baucua, 10000);
 }
 function checktime() {
-	if (time <= 0 ) {
+	if (time <= 0) {
 		time = 0;
 		baucua();
 		clearInterval(timebc);
