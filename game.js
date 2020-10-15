@@ -297,9 +297,10 @@ document.getElementsByClassName("bc")[0].addEventListener("click", function () {
 	if (fmoney != null) {
 		setCookie("fmoney", fmoney, 30);
 	}
+	
 	document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 	
-	//ondc = 0;
+	//ondc = 0
 	//ondc1 +=1;
 	dcbc += ondc;
 });
