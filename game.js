@@ -61,7 +61,7 @@ var dcbc4 = 0;
 var dcbc5 = 0;
 var dcbc6 = 0;
 var timebc;
-var time = 5;
+var time = 15;
 var checkbcc = 0;
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
@@ -642,7 +642,7 @@ function checkbc() {
 }
 function baucuaa() {
 	clearInterval(timebc);
-	time = 5;
+	time = 15;
 	dcbc1 = 0;
 	dcbc2 = 0;
 	dcbc3 = 0;
