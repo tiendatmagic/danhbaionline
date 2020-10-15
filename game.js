@@ -62,7 +62,7 @@ var dcbc5 = 0;
 var dcbc6 = 0;
 var timebc;
 var time = 5;
-//var checkbc = 0;
+var checkbcc = 0;
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
 function setCookie(hihihi, cvalue, exdays) {
@@ -290,7 +290,7 @@ document.getElementsByClassName("dc-5000")[0].addEventListener("click", function
 });
 //
 document.getElementsByClassName("bc")[0].addEventListener("click", function () {
-	
+	if (checkbcc === 0) {
 		bca1 = 1;
 		//dcc += dcbc;
 		var fmoney = getCookie("fmoney");
@@ -307,11 +307,11 @@ document.getElementsByClassName("bc")[0].addEventListener("click", function () {
 		//ondc = 0
 		//ondc1 +=1;
 		dcbc1 += ondc;
-	
+	}
 
 });
 document.getElementsByClassName("bc")[1].addEventListener("click", function () {
-	
+	if (checkbcc === 0) {
 		bca2 = 1;
 		var fmoney = getCookie("fmoney");
 
@@ -326,11 +326,11 @@ document.getElementsByClassName("bc")[1].addEventListener("click", function () {
 		//	ondc = 0;
 		//ondc1 +=1;
 		dcbc2 += ondc;
-	
+	}
 
 });
 document.getElementsByClassName("bc")[2].addEventListener("click", function () {
-	
+	if (checkbcc === 0) {
 		bca3 = 1;
 
 		var fmoney = getCookie("fmoney");
@@ -346,11 +346,11 @@ document.getElementsByClassName("bc")[2].addEventListener("click", function () {
 		//	ondc = 0;
 		//ondc1 +=1;
 		dcbc3 += ondc;
-	
+	}
 
 });
 document.getElementsByClassName("bc")[3].addEventListener("click", function () {
-	
+	if (checkbcc === 0) {
 		bca4 = 1;
 
 		var fmoney = getCookie("fmoney");
@@ -366,11 +366,11 @@ document.getElementsByClassName("bc")[3].addEventListener("click", function () {
 		//ondc = 0;
 		//ondc1 +=1;
 		dcbc4 += ondc;
-	
+	}
 
 });
 document.getElementsByClassName("bc")[4].addEventListener("click", function () {
-	
+	if (checkbcc === 0) {
 		bca5 = 1;
 
 		var fmoney = getCookie("fmoney");
@@ -386,11 +386,11 @@ document.getElementsByClassName("bc")[4].addEventListener("click", function () {
 		//ondc = 0;
 		//ondc1 +=1;
 		dcbc5 += ondc;
-	
+	}
 
 });
 document.getElementsByClassName("bc")[5].addEventListener("click", function () {
-	
+	if (checkbcc === 0) {
 		bca6 = 1;
 
 		var fmoney = getCookie("fmoney");
@@ -406,7 +406,7 @@ document.getElementsByClassName("bc")[5].addEventListener("click", function () {
 		//ondc = 0;
 		//ondc1 +=1;
 		dcbc6 += ondc;
-	
+	}
 
 });
 
@@ -634,7 +634,9 @@ function checkbc() {
 		}
 		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 	}
-
+	setTimeout(function() {
+		checkbcc = 0;
+	},5000)
 	alert("OK");
 	setTimeout(baucuaa, 3000);
 }
@@ -678,6 +680,7 @@ function checktime() {
 }
 
 function baucua() {
+	checkbcc = 1;
 	document.getElementsByClassName("bc1")[0].style.display = 'block';
 	document.getElementsByClassName("bc2")[0].style.display = 'block';
 	document.getElementsByClassName("bc3")[0].style.display = 'block';
