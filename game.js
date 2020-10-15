@@ -631,15 +631,18 @@ function checkbc() {
 }
 function baucuaa() {
 	clearInterval(timebc);
+	time = 5;
 	document.getElementById("baucuaa").style.display='block';
 	document.getElementsByClassName("bc1")[0].style.display = 'none';
 	document.getElementsByClassName("bc2")[0].style.display = 'none';
 	document.getElementsByClassName("bc3")[0].style.display = 'none';
+	document.getElementsByClassName("xmdc")[0].style.display = 'block';
 	document.getElementsByClassName("xmdc")[0].innerText = "Xin mời đặt cược";
 	setTimeout(function () {
 		document.getElementsByClassName("xmdc")[0].style.display = 'none';
 		timebc = setInterval(function () {
 			time--;
+			document.getElementsByClassName("timebc")[0].style.display = 'block';
 			document.getElementsByClassName("timebc")[0].innerText = time;
 			checktime();
 		}, 1000);
