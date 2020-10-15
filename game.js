@@ -475,10 +475,9 @@ function baucua() {
 	bc1 = Math.ceil(Math.random() * 6);
 	bc2 = Math.ceil(Math.random() * 6);
 	bc3 = Math.ceil(Math.random() * 6);
-
-	document.getElementsByClassName("bc1")[0].innerText = bc1;
-	document.getElementsByClassName("bc2")[0].innerText = bc2;
-	document.getElementsByClassName("bc3")[0].innerText = bc3;
+	bbc1();
+	bbc2();
+	bbc3();
 	arrbc = [bc1, bc2, bc3];
 	arrbc.sort(function (a, b) {
 		return a - b;
