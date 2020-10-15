@@ -302,7 +302,7 @@ document.getElementsByClassName("bc")[0].addEventListener("click", function () {
 
 	//ondc = 0
 	//ondc1 +=1;
-	dcbc += ondc;
+	dcbc1 += ondc;
 });
 document.getElementsByClassName("bc")[1].addEventListener("click", function () {
 
@@ -319,7 +319,7 @@ document.getElementsByClassName("bc")[1].addEventListener("click", function () {
 
 	//	ondc = 0;
 	//ondc1 +=1;
-	dcbc += ondc;
+	dcbc2 += ondc;
 
 });
 document.getElementsByClassName("bc")[2].addEventListener("click", function () {
@@ -338,7 +338,7 @@ document.getElementsByClassName("bc")[2].addEventListener("click", function () {
 
 	//	ondc = 0;
 	//ondc1 +=1;
-	dcbc += ondc;
+	dcbc3 += ondc;
 
 });
 document.getElementsByClassName("bc")[3].addEventListener("click", function () {
@@ -357,7 +357,7 @@ document.getElementsByClassName("bc")[3].addEventListener("click", function () {
 
 	//ondc = 0;
 	//ondc1 +=1;
-	dcbc += ondc;
+	dcbc4 += ondc;
 
 });
 document.getElementsByClassName("bc")[4].addEventListener("click", function () {
@@ -376,7 +376,7 @@ document.getElementsByClassName("bc")[4].addEventListener("click", function () {
 
 	//ondc = 0;
 	//ondc1 +=1;
-	dcbc += ondc;
+	dcbc5 += ondc;
 
 });
 document.getElementsByClassName("bc")[5].addEventListener("click", function () {
@@ -395,7 +395,7 @@ document.getElementsByClassName("bc")[5].addEventListener("click", function () {
 
 	//ondc = 0;
 	//ondc1 +=1;
-	dcbc += ondc;
+	dcbc6 += ondc;
 
 });
 
@@ -404,7 +404,7 @@ document.getElementsByClassName("bc")[5].addEventListener("click", function () {
 function checkbc() {
 	if (bca1 === 1 && bc1 === 1 || bca1 === 1 && bc2 === 1 || bca1 === 1 && bc3 === 1) {
 		var fmoney = getCookie("fmoney");
-		money += dcbc * 2;
+		money += dcbc1 * 2;
 		fmoney = money;
 		if (fmoney != null) {
 			setCookie("fmoney", fmoney, 30);
@@ -416,7 +416,7 @@ function checkbc() {
 
 	if (bca2 === 1 && bc1 === 2 || bca2 === 1 && bc2 === 2 || bca2 === 1 && bc3 === 2) {
 		var fmoney = getCookie("fmoney");
-		money += dcbc * 2;
+		money += dcbc2 * 2;
 		fmoney = money;
 		if (fmoney != null) {
 			setCookie("fmoney", fmoney, 30);
@@ -427,7 +427,7 @@ function checkbc() {
 
 	if (bca3 === 1 && bc1 === 3 || bca3 === 1 && bc2 === 3 || bca3 === 1 && bc3 === 3) {
 		var fmoney = getCookie("fmoney");
-		money += dcbc * 2;
+		money += dcbc3 * 2;
 		fmoney = money;
 		if (fmoney != null) {
 			setCookie("fmoney", fmoney, 30);
@@ -438,7 +438,7 @@ function checkbc() {
 
 	if (bca4 === 1 && bc1 === 4 || bca4 === 1 && bc2 === 4 || bca4 === 1 && bc3 === 4) {
 		var fmoney = getCookie("fmoney");
-		money += dcbc * 2;
+		money += dcbc4 * 2;
 		fmoney = money;
 		if (fmoney != null) {
 			setCookie("fmoney", fmoney, 30);
@@ -449,7 +449,7 @@ function checkbc() {
 
 	if (bca5 === 1 && bc1 === 5 || bca5 === 1 && bc2 === 5 || bca5 === 1 && bc3 === 5) {
 		var fmoney = getCookie("fmoney");
-		money += dcbc * 2;
+		money += dcbc5 * 2;
 		fmoney = money;
 		if (fmoney != null) {
 			setCookie("fmoney", fmoney, 30);
@@ -459,7 +459,7 @@ function checkbc() {
 	}
 	if (bca6 === 1 && bc1 === 6 || bca6 === 1 && bc2 === 6 || bca6 === 1 && bc3 === 6) {
 		var fmoney = getCookie("fmoney");
-		money += dcbc * 2;
+		money += dcbc6 * 2;
 		fmoney = money;
 		if (fmoney != null) {
 			setCookie("fmoney", fmoney, 30);
