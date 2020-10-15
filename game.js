@@ -637,7 +637,7 @@ function checkbc() {
 	setTimeout(function() {
 		checkbcc = 0;
 	},5000)
-	alert("OK");
+	//alert("OK");
 	setTimeout(baucuaa, 3000);
 }
 function baucuaa() {
