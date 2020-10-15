@@ -60,6 +60,8 @@ var dcbc3 = 0;
 var dcbc4 = 0;
 var dcbc5 = 0;
 var dcbc6 = 0;
+var timebc;
+var time = 5;
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
 function setCookie(hihihi, cvalue, exdays) {
@@ -628,10 +630,38 @@ function checkbc() {
 	alert("OK");
 }
 function baucuaa() {
+	clearInterval(timebc);
+	document.getElementById("baucuaa").style.display='block';
+	document.getElementsByClassName("bc1")[0].style.display = 'none';
+	document.getElementsByClassName("bc2")[0].style.display = 'none';
+	document.getElementsByClassName("bc3")[0].style.display = 'none';
+	document.getElementsByClassName("xmdc")[0].innerText = "Xin mời đặt cược";
+	setTimeout(function () {
+		document.getElementsByClassName("xmdc")[0].style.display = 'none';
+		timebc = setInterval(function () {
+			time--;
+			document.getElementsByClassName("timebc")[0].innerText = time;
+			checktime();
+		}, 1000);
+	}, 2000);
+
+	//setTimeout(baucua, 10000);
+}
+function checktime() {
+	if (time <= 0 ) {
+		time = 0;
+		baucua();
+		clearInterval(timebc);
+		document.getElementsByClassName("timebc")[0].style.display = 'none';
+	}
+
 
 }
 
 function baucua() {
+	document.getElementsByClassName("bc1")[0].style.display = 'block';
+	document.getElementsByClassName("bc2")[0].style.display = 'block';
+	document.getElementsByClassName("bc3")[0].style.display = 'block';
 	bc1 = Math.ceil(Math.random() * 6);
 	bc2 = Math.ceil(Math.random() * 6);
 	bc3 = Math.ceil(Math.random() * 6);
@@ -643,7 +673,7 @@ function baucua() {
 		return a - b;
 	});
 
-	setTimeout(checkbc, 10000);
+	setTimeout(checkbc, 1000);
 }
 
 
