@@ -134,7 +134,8 @@ document.getElementsByClassName("mg-baucua")[0].addEventListener("click", functi
 	document.getElementsByClassName("g-main")[0].style.display = 'block';
 
 	document.getElementsByClassName("round-game")[0].style.display = 'none';
-	baucua();
+	baucuaa();
+	//baucua();
 
 
 });
@@ -402,7 +403,8 @@ document.getElementsByClassName("bc")[5].addEventListener("click", function () {
 
 
 function checkbc() {
-	if (bca1 === 1 && arrbc[0] === 1 && bca1 === 1 && arrbc[1] === 1 ) {
+	if (bca1 === 1 && arrbc[0] === 1 && arrbc[1] === 1 && arrbc[2] !== 1
+		|| bca1 === 1 && arrbc[1] === 1 && arrbc[2] === 1 && arrbc[0] !== 1) {
 		var fmoney = getCookie("fmoney");
 		money += dcbc1 * 3;
 		fmoney = money;
@@ -413,8 +415,138 @@ function checkbc() {
 		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 	}
 
+	if (bca2 === 1 && arrbc[0] === 2 && arrbc[1] === 2 && arrbc[2] !== 2
+		|| bca2 === 1 && arrbc[1] === 2 && arrbc[2] === 2 && arrbc[0] !== 2) {
+		var fmoney = getCookie("fmoney");
+		money += dcbc2 * 3;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+	}
+
+	if (bca3 === 1 && arrbc[0] === 3 && arrbc[1] === 3 && arrbc[2] !== 3
+		|| bca3 === 1 && arrbc[1] === 3 && arrbc[2] === 3 && arrbc[0] !== 3) {
+		var fmoney = getCookie("fmoney");
+		money += dcbc3 * 3;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+	}
+
+	if (bca4 === 1 && arrbc[0] === 4 && arrbc[1] === 4 && arrbc[2] !== 4
+		|| bca4 === 1 && arrbc[1] === 4 && arrbc[2] === 4 && arrbc[0] !== 4) {
+		var fmoney = getCookie("fmoney");
+		money += dcbc4 * 3;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+	}
+
+	if (bca5 === 1 && arrbc[0] === 5 && arrbc[1] === 5 && arrbc[2] !== 5
+		|| bca5 === 1 && arrbc[1] === 5 && arrbc[2] === 5 && arrbc[0] !== 5) {
+		var fmoney = getCookie("fmoney");
+		money += dcbc5 * 3;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+	}
+
+	if (bca6 === 1 && arrbc[0] === 6 && arrbc[1] === 6 && arrbc[2] !== 6
+		|| bca6 === 1 && arrbc[1] === 6 && arrbc[2] === 6 && arrbc[0] !== 6) {
+		var fmoney = getCookie("fmoney");
+		money += dcbc6 * 3;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+	}
+
+	//
+
+	if (bca1 === 1 && arrbc[0] === 1 && arrbc[1] === 1 && arrbc[2] === 1) {
+		var fmoney = getCookie("fmoney");
+		money += dcbc1 * 4;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+	}
+
+	if (bca2 === 1 && arrbc[0] === 2 && arrbc[1] === 2 && arrbc[2] === 2) {
+		var fmoney = getCookie("fmoney");
+		money += dcbc2 * 4;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+	}
+
+	if (bca3 === 1 && arrbc[0] === 3 && arrbc[1] === 3 && arrbc[2] === 3) {
+		var fmoney = getCookie("fmoney");
+		money += dcbc3 * 4;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+	}
+
+	if (bca4 === 1 && arrbc[0] === 4 && arrbc[1] === 4 && arrbc[2] === 4) {
+		var fmoney = getCookie("fmoney");
+		money += dcbc4 * 4;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+	}
+
+	if (bca5 === 1 && arrbc[0] === 5 && arrbc[1] === 5 && arrbc[2] === 5) {
+		var fmoney = getCookie("fmoney");
+		money += dcbc5 * 4;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+	}
+
+	if (bca6 === 1 && arrbc[0] === 6 && arrbc[1] === 6 && arrbc[2] === 6) {
+		var fmoney = getCookie("fmoney");
+		money += dcbc6 * 4;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+	}
+
+
+	//
 	if (bca1 === 1 && arrbc[0] === 1 && arrbc[1] !== 1 && arrbc[2] !== 1
-		|| bca1 === 1 && arrbc[1] === 1 && arrbc[0] !== 1 && arrbc[2] !== 1 
+		|| bca1 === 1 && arrbc[1] === 1 && arrbc[0] !== 1 && arrbc[2] !== 1
 		|| bca1 === 1 && arrbc[2] === 1 && arrbc[0] !== 1 && arrbc[1] !== 1) {
 		var fmoney = getCookie("fmoney");
 		money += dcbc1 * 2;
@@ -429,7 +561,9 @@ function checkbc() {
 
 
 
-	if (bca2 === 1 && arrbc[0] === 2 || bca2 === 1 && arrbc[1] === 2 || bca2 === 1 && arrbc[2] === 2) {
+	if (bca2 === 1 && arrbc[0] === 2 && arrbc[1] !== 2 && arrbc[2] !== 2
+		|| bca2 === 1 && arrbc[1] === 2 && arrbc[0] !== 2 && arrbc[2] !== 2
+		|| bca2 === 1 && arrbc[2] === 2 && arrbc[0] !== 2 && arrbc[1] !== 2) {
 		var fmoney = getCookie("fmoney");
 		money += dcbc2 * 2;
 		fmoney = money;
@@ -440,7 +574,9 @@ function checkbc() {
 		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 	}
 
-	if (bca3 === 1 && arrbc[0] === 3 || bca3 === 1 && arrbc[1] === 3 || bca3 === 1 && arrbc[2] === 3) {
+	if (bca3 === 1 && arrbc[0] === 3 && arrbc[1] !== 3 && arrbc[2] !== 3
+		|| bca3 === 1 && arrbc[1] === 3 && arrbc[0] !== 3 && arrbc[2] !== 3
+		|| bca3 === 1 && arrbc[2] === 3 && arrbc[0] !== 3 && arrbc[1] !== 3) {
 		var fmoney = getCookie("fmoney");
 		money += dcbc3 * 2;
 		fmoney = money;
@@ -451,7 +587,9 @@ function checkbc() {
 		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 	}
 
-	if (bca4 === 1 && arrbc[0] === 4 || bca4 === 1 && arrbc[1] === 4 || bca4 === 1 && arrbc[2] === 4) {
+	if (bca4 === 1 && arrbc[0] === 4 && arrbc[1] !== 4 && arrbc[2] !== 4
+		|| bca4 === 1 && arrbc[1] === 4 && arrbc[0] !== 4 && arrbc[2] !== 4
+		|| bca4 === 1 && arrbc[2] === 4 && arrbc[0] !== 4 && arrbc[1] !== 4) {
 		var fmoney = getCookie("fmoney");
 		money += dcbc4 * 2;
 		fmoney = money;
@@ -462,7 +600,9 @@ function checkbc() {
 		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 	}
 
-	if (bca5 === 1 && arrbc[0] === 5 || bca5 === 1 && arrbc[1] === 5 || bca5 === 1 && arrbc[2] === 5) {
+	if (bca5 === 1 && arrbc[0] === 5 && arrbc[1] !== 5 && arrbc[2] !== 5
+		|| bca5 === 1 && arrbc[1] === 5 && arrbc[0] !== 5 && arrbc[2] !== 5
+		|| bca5 === 1 && arrbc[2] === 5 && arrbc[0] !== 5 && arrbc[1] !== 5) {
 		var fmoney = getCookie("fmoney");
 		money += dcbc5 * 2;
 		fmoney = money;
@@ -472,7 +612,9 @@ function checkbc() {
 		}
 		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 	}
-	if (bca6 === 1 && arrbc[0] === 6 || bca6 === 1 && arrbc[1] === 6 || bca6 === 1 && arrbc[2] === 6) {
+	if (bca6 === 1 && arrbc[0] === 6 && arrbc[1] !== 6 && arrbc[2] !== 6
+		|| bca6 === 1 && arrbc[1] === 6 && arrbc[0] !== 6 && arrbc[2] !== 6
+		|| bca6 === 1 && arrbc[2] === 6 && arrbc[0] !== 6 && arrbc[1] !== 6) {
 		var fmoney = getCookie("fmoney");
 		money += dcbc6 * 2;
 		fmoney = money;
@@ -485,11 +627,14 @@ function checkbc() {
 
 	alert("OK");
 }
+function baucuaa() {
+
+}
 
 function baucua() {
-	bc1 = 3;
-	bc2 = 1;
-	bc3 = 1;
+	bc1 = Math.ceil(Math.random() * 6);
+	bc2 = Math.ceil(Math.random() * 6);
+	bc3 = Math.ceil(Math.random() * 6);
 	bbc1();
 	bbc2();
 	bbc3();
