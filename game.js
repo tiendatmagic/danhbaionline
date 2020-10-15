@@ -413,7 +413,7 @@ function checkbc() {
 		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 	}
 
-	/*
+	
 	if (bca2 === 1 && bc1 === 2 || bca2 === 1 && bc2 === 2 || bca2 === 1 && bc3 === 2) {
 		var fmoney = getCookie("fmoney");
 		money += dcbc * 2;
@@ -467,7 +467,7 @@ function checkbc() {
 		}
 		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 	}
-*/
+
 	alert("OK");
 }
 
