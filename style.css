@@ -14,6 +14,7 @@ html {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+    overflow:hidden;
 
 }
 #login {
@@ -320,6 +321,13 @@ html {
         line-height: 160px;
         font-size: 17px;
     }
+
+    #selectmoney div {
+        width: 130px;
+        height: 160px;
+
+
+    }
 }
 
 
@@ -331,13 +339,26 @@ html {
         font-size: 17px;
     }
 
+    #selectmoney div {
+        width: 100px;
+        height: 160px;
+
+
+    }
     #selectmoney span {
 
         margin-left: 30%;
         }
 }
 
+@media only screen and (max-width:360px) {
+    #selectmoney div {
+        width: 70px;
+        height: 110px;
 
+
+    }
+}
 @media only screen and (max-width:320px) {
     #mg div {
         width: 110px;
@@ -358,7 +379,74 @@ html {
 
 @media only screen and (max-height:500px) {
 body {
-    transform: scale(0.8);
+    transform: scale(0.9);
+}
+
+.round-game {
+
+    height: 460px;
 }
 }
+
+@media only screen and (max-height:500px) {
+    #mg div {
+        transform: scale(0.9);
+    }
+    .round-game {
+
+        transform: scale(0.8);
+    }
+    }
+@media only screen and (max-height:480px) {
+    body {
+        transform: scale(0.8);
+    }
+
+    
+    
+    }
+
+    @media only screen and (max-height:460px) {
+        .round-game {
+
+            height: 440px;
+        }
+        
+        }
+
+        @media only screen and (max-height:450px) {
+            .round-game {
+    
+                height: 400px;
+            }
+            #mg div {
+                transform: scale(0.7);
+            }
+            }
+
+            @media only screen and (max-height:410px) {
+                .round-game {
+        
+                    height: 370px;
+                }
+                
+                }
+
+                @media only screen and (max-height:385px) {
+                    .round-game {
+            
+                        height: 335px;
+                    }
+                   
+                   
+                    }
+
+                    @media only screen and (max-height:385px) {
+                        .round-game {
+                
+                            height: 335px;
+                        }
+                       
+                       
+                        }
 
