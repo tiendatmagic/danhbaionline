@@ -297,8 +297,20 @@ html {
     #mg div {
         width: 170px;
         height: 200px;
-        
+
     }
+
+    #selectmoney div {
+        width: 30%;
+        height: 130px;
+        background-color: rgb(114, 111, 255);
+        margin: 10px;
+        border-radius: 20%;
+        font-size: 20px;
+
+    }
+
+   
 }
 
 @media only screen and (max-width:630px) {
@@ -318,6 +330,11 @@ html {
         line-height: 130px;
         font-size: 17px;
     }
+
+    #selectmoney span {
+
+        margin-left: 30%;
+        }
 }
 
 
