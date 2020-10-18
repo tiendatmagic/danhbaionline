@@ -356,3 +356,9 @@ html {
     }
 }
 
+@media only screen and (max-height:500px) {
+body {
+    transform: scale(0.8);
+}
+}
+
