@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+}
+#login {
+    width: 100%;
+    height: 500px;
+ 
+    display: flex;
+    align-items: center;
+
+}
+.start {
+    background-color: rgb(79, 255, 62);
+    padding: 30px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+    font-size: 25px;
+  
+   
+}
+
+#mg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#mg div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    background-color: rgb(114, 111, 255);
+    margin: 20px;
+    font-size: 26px;
+    border-radius: 20%;
+    word-break: break-all;
+}
+
+#mg div:hover {
+    background-color: rgb(209, 111, 255);
+}
+
+.g-main {
+    display: none;
+}
+
+.round-game {
+    width: 80%;
+    height: 650px;
+    background-color: rgb(114, 111, 255);
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    height: 550px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+#selectmoney {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#selectmoney div {
+    width: 160px;
+    height: 160px;
+    background-color: rgb(114, 111, 255);
+    margin: 10px;
+    border-radius: 20%;
+    font-size: 20px;
+}
+
+#selectmoney div:hover,
+#ruongmayman div:hover #baucua div:hover {
+    background-color: rgb(209, 111, 255);
+}
+
+#selectmoney span,
+#baucua span {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    margin-left: 40%;
+}
+
+#ruongmayman {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+#ruongmayman div {
+    width: 160px;
+    height: 160px;
+    background-color: rgb(114, 111, 255);
+    margin: 10px;
+    border-radius: 20%;
+    font-size: 20px;
+}
+
+#baucuaa {
+    display: none;
+}
+
+#baucua {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#baucua div {
+    width: 200px;
+    height: 120px;
+    background-color: rgb(114, 111, 255);
+    margin: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#baucua .naphop {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    margin: 10px;
+
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+@media only screen and (min-width:600px) {
+    #baucua .naphop {
+        background-color: blue;
+    }
+
+    .naphop img {
+        margin-left: 10px;
+    }
+
+}
+
+
+@media only screen and (max-width:450px) {
+    #baucua .naphop {
+
+        background-color: green;
+
+    }
+
+    .naphop img {
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    #baucua .naphop {
+
+        background-color: green;
+
+    }
+
+    .naphop img {
+        width: 50px;
+        height: 70px;
+    }
+}
+
+
+
+#dcc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#dcc div {
+    width: 150px;
+    height: 100px;
+    background-color: rgb(114, 111, 255);
+    margin: 10px;
+    border-radius: 10%;
+    font-size: 20px;
+}
+
+#dcc span {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    margin-left: 40%;
+}
+
+.bdmain {
+    background-color: rgb(79, 255, 62);
+    padding: 30px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.player1,
+.player2 {
+    width: 300px;
+    height: 200px;
+}
+
+.player1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.player2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.card {
+    display: none;
+}
+
+.status {
+    display: none;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.xd {
+    display: none;
+    background-color: rgb(79, 255, 62);
+    padding: 5px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+.dcc {
+    display: flex;
+}
