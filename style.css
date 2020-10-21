@@ -1,452 +1,514 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body,
 html {
-    width: 100%;
-    height: 100%;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    overflow:hidden;
-
+	width: 100%;
+	height: 100%;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	overflow: hidden;
 }
+
 #login {
-    width: 100%;
-    height: 400px;
- 
-    display: flex;
-    align-items: center;
-
+	width: 100%;
+	height: 400px;
+	display: flex;
+	align-items: center;
 }
+
 .start {
-    background-color: rgb(79, 255, 62);
-    padding: 30px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    justify-content: center;
-
-    cursor: pointer;
-    font-size: 25px;
+	background-color: rgb(79, 255, 62);
+	padding: 30px;
+	border-radius: 15px;
+	outline: none;
+	border: none;
+	justify-content: center;
+	cursor: pointer;
+	font-size: 25px;
     margin: auto;
-
-
- 
-   
+    /* z-index: 999999999999; */
 }
 
 #mg {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #mg div {
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    line-height: 200px;
-    background-color: rgb(114, 111, 255);
-    margin: 20px;
-    font-size: 20px;
-    border-radius: 20%;
-    word-break: break-all;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	line-height: 200px;
+	background-color: rgb(114, 111, 255);
+	margin: 20px;
+	font-size: 20px;
+	border-radius: 20%;
+	word-break: break-all;
 }
 
 #mg div:hover {
-    background-color: rgb(209, 111, 255);
+	background-color: rgb(209, 111, 255);
 }
 
 .g-main {
-    display: none;
+	display: none;
 }
 
 .round-game {
-    width: 80%;
-    height: 650px;
-    background-color: rgb(114, 111, 255);
-    position: relative;
-    margin: 0 auto;
-    width: 90%;
-    height: 550px;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
+	width: 80%;
+	height: 650px;
+	background-color: rgb(114, 111, 255);
+	position: relative;
+	margin: 0 auto;
+	width: 90%;
+	height: 550px;
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
 }
 
 #selectmoney {
-    display: none;
-    flex-wrap: wrap;
-    justify-content: center;
+	display: none;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #selectmoney div {
-    width: 160px;
-    height: 160px;
-    background-color: rgb(114, 111, 255);
-    margin: 10px;
-    border-radius: 20%;
-    font-size: 20px;
+	width: 160px;
+	height: 160px;
+	background-color: rgb(114, 111, 255);
+	margin: 10px;
+	border-radius: 20%;
+	font-size: 20px;
 }
 
 #selectmoney div:hover,
 #ruongmayman div:hover #baucua div:hover {
-    background-color: rgb(209, 111, 255);
+	background-color: rgb(209, 111, 255);
 }
 
 #selectmoney span,
 #baucua span {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    margin-left: 40%;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	margin-left: 40%;
 }
 
 #ruongmayman {
-    display: none;
-    flex-wrap: wrap;
-    justify-content: center;
-
-
+	display: none;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #ruongmayman div {
-    width: 160px;
-    height: 160px;
-    background-color: rgb(114, 111, 255);
-    margin: 10px;
-    border-radius: 20%;
-    font-size: 20px;
+	width: 160px;
+	height: 160px;
+	background-color: rgb(114, 111, 255);
+	margin: 10px;
+	border-radius: 20%;
+	font-size: 20px;
 }
 
 #baucuaa {
-    display: none;
+	display: none;
 }
 
 #baucua {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
 }
 
 #baucua div {
-    width: 200px;
-    height: 120px;
-    background-color: rgb(114, 111, 255);
-    margin: 10px;
-    border-radius: 50%;
-    font-size: 20px;
+	width: 200px;
+	height: 120px;
+	background-color: rgb(114, 111, 255);
+	margin: 10px;
+	border-radius: 50%;
+	font-size: 20px;
 }
 
 #baucua .naphop {
-    display: flex;
-    width: 100%;
-    height: 200px;
-    background-color: red;
-    margin: 10px;
-
-    font-size: 20px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+	display: flex;
+	width: 100%;
+	height: 200px;
+	background-color: red;
+	margin: 10px;
+	font-size: 20px;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
 }
 
-
-
-
 #dcc {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
 }
 
 #dcc div {
-    width: 150px;
-    height: 100px;
-    background-color: rgb(114, 111, 255);
-    margin: 10px;
-    border-radius: 10%;
-    font-size: 20px;
+	width: 150px;
+	height: 100px;
+	background-color: rgb(114, 111, 255);
+	margin: 10px;
+	border-radius: 10%;
+	font-size: 20px;
 }
 
 #dcc span {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    margin-left: 40%;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	margin-left: 40%;
 }
 
 .bdmain {
-    background-color: rgb(79, 255, 62);
-    padding: 30px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-size: 25px;
-    margin: 0 auto;
+	background-color: rgb(79, 255, 62);
+	padding: 30px;
+	border-radius: 15px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-size: 25px;
+	margin: 0 auto;
 }
 
 .player1,
 .player2 {
-    width: 300px;
+	width: 300px;
     height: 200px;
+    /* z-index: -1; */
 }
 
 .player1 {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	margin: 0 auto;
+	align-items: center;
 }
 
 .player2 {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	margin: 0 auto;
+	align-items: center;
 }
 
 .card {
-    display: none;
+	display: none;
 }
 
 .status {
-    display: none;
-    text-align: center;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
+	display: none;
+	text-align: center;
+	justify-content: center;
+	margin: 0 auto;
+	align-items: center;
 }
 
 .xd {
-    display: none;
-    background-color: rgb(79, 255, 62);
-    padding: 5px;
-    border-radius: 8px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+	display: none;
+	background-color: rgb(79, 255, 62);
+	padding: 5px;
+	border-radius: 8px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
 }
 
-
-
 .dcc {
-    display: flex;
+	display: flex;
 }
 
 @media only screen and (min-width:600px) {
-    #baucua .naphop {
-        background-color: blue;
-    }
+	#baucua .naphop {
+		background-color: blue;
+	}
 
-    .naphop img {
-        margin-left: 10px;
-    }
-
+	.naphop img {
+		margin-left: 10px;
+	}
 }
 
-
 @media only screen and (max-width:450px) {
-    #baucua .naphop {
+	#baucua .naphop {
+		background-color: green;
+	}
 
-        background-color: green;
-
-    }
-
-    .naphop img {
-        width: 70px;
-    }
+	.naphop img {
+		width: 70px;
+	}
 }
 
 @media only screen and (max-width:300px) {
-    #baucua .naphop {
+	#baucua .naphop {
+		background-color: green;
+	}
 
-        background-color: green;
-
-    }
-
-    .naphop img {
-        width: 50px;
-        height: 70px;
-    }
+	.naphop img {
+		width: 50px;
+		height: 70px;
+	}
 }
 
 @media only screen and (max-width:720px) {
-    #mg div {
-        width: 170px;
-        height: 200px;
+	#mg div {
+		width: 170px;
+		height: 200px;
+	}
 
-    }
-
-    #selectmoney div {
-        width: 30%;
-        height: 130px;
-        background-color: rgb(114, 111, 255);
-        margin: 10px;
-        border-radius: 20%;
-        font-size: 20px;
-
-    }
-
-   
+	#selectmoney div {
+		width: 30%;
+		height: 130px;
+		background-color: rgb(114, 111, 255);
+		margin: 10px;
+		border-radius: 20%;
+		font-size: 20px;
+	}
 }
 
 @media only screen and (max-width:630px) {
-    #mg div {
-        width: 120px;
-        height: 160px;
-        line-height: 160px;
-        font-size: 17px;
-    }
+	#mg div {
+		width: 120px;
+		height: 160px;
+		line-height: 160px;
+		font-size: 17px;
+	}
 
-    #selectmoney div {
-        width: 130px;
-        height: 160px;
-
-
-    }
+	#selectmoney div {
+		width: 130px;
+		height: 160px;
+	}
 }
 
-
 @media only screen and (max-width:480px) {
-    #mg div {
-        width: 120px;
-        height: 130px;
-        line-height: 130px;
-        font-size: 17px;
-    }
+	#mg div {
+		width: 120px;
+		height: 130px;
+		line-height: 130px;
+		font-size: 17px;
+	}
 
-    #selectmoney div {
-        width: 100px;
-        height: 160px;
+	#selectmoney div {
+		width: 100px;
+		height: 160px;
+	}
 
-
-    }
-    #selectmoney span {
-
-        margin-left: 30%;
-        }
+	#selectmoney span {
+		margin-left: 30%;
+	}
 }
 
 @media only screen and (max-width:360px) {
-    #selectmoney div {
-        width: 70px;
-        height: 110px;
-
-
-    }
+	#selectmoney div {
+		width: 70px;
+		height: 110px;
+	}
 }
+
 @media only screen and (max-width:320px) {
-    #mg div {
-        width: 110px;
-        height: 130px;
-        line-height: 130px;
-        font-size: 14px;
-    }
+	#mg div {
+		width: 110px;
+		height: 130px;
+		line-height: 130px;
+		font-size: 14px;
+	}
 }
+
 
 @media only screen and (max-width:300px) {
-    #mg div {
-        width: 50%;
-        height: 60px;
-        line-height: 60px;
-        font-size: 12px;
-    }
+	#mg div {
+		width: 50%;
+		height: 60px;
+		line-height: 60px;
+		font-size: 12px;
+	}
+}
+
+
+@media only screen and (max-height:620px) {
+	body {
+		transform: scale(0.9);
+	}	
+
+	.bdmain {
+
+		padding: 15px;
+
+	}
+	.round-game {
+		width: 80%;
+		height: 508px !important;
+		background-color: rgb(114, 111, 255);
+		position: relative;
+		margin: 0 auto;
+		width: 90%;
+		height: 550px;
+		border: 1px solid black;
+		display: flex;
+		align-items: center;
+	}
+	p {
+		font-size: 13px;
+	}
+
+}
+
+@media only screen and (max-height:560px) {
+	body {
+		transform: scale(0.9);
+	}
+	#mg div {
+		width: 100px;
+		height: 100px;
+		line-height: 100px;
+
+	}
+
+	.bdmain {
+
+		padding: 5px;
+		font-size: 16px;
+
+	}
+	.round-game {
+		width: 80%;
+		height: 420px !important;
+		background-color: rgb(114, 111, 255);
+		position: relative;
+		margin: 0 auto;
+		width: 90%;
+		height: 550px;
+		border: 1px solid black;
+		display: flex;
+		align-items: center;
+	}
+
+	img {
+		transform: scale(0.8);
+	}
+
+}
+
+
+/*
+
+@media only screen and (max-height:500px) {
+	body {
+		transform: scale(0.9);
+	}
+
+	.round-game {
+		height: 460px;
+	}
 }
 
 @media only screen and (max-height:500px) {
-body {
-    transform: scale(0.9);
+	#mg div {
+		transform: scale(0.9);
+	}
+
+	.round-game {
+		transform: scale(0.8);
+	}
 }
 
-.round-game {
-
-    height: 460px;
-}
-}
-
-@media only screen and (max-height:500px) {
-    #mg div {
-        transform: scale(0.9);
-    }
-    .round-game {
-
-        transform: scale(0.8);
-    }
-    }
 @media only screen and (max-height:480px) {
-    body {
-        transform: scale(0.8);
-    }
+	body {
+		transform: scale(0.8);
+	}
+}
 
-    
-    
-    }
+@media only screen and (max-height:470px) {
+	.round-game {
+		height: 440px;
+	}
 
-    @media only screen and (max-height:460px) {
-        .round-game {
+	#mg div {
+		transform: scale(0.8);
+	}
+}
 
-            height: 440px;
-        }
-        
-        }
+@media only screen and (max-height:460px) {
+  
+	#mg div {
+		transform: scale(0.7);
+	}
+}
 
-        @media only screen and (max-height:450px) {
-            .round-game {
-    
-                height: 400px;
-            }
-            #mg div {
-                transform: scale(0.7);
-            }
-            }
+@media only screen and (max-height:450px) {
+	.round-game {
+		height: 400px;
+	}
+}
 
-            @media only screen and (max-height:410px) {
-                .round-game {
-        
-                    height: 370px;
-                }
-                
-                }
+@media only screen and (max-height:447px) {
+	#mg div {
+		height: 160px;
+		line-height: 160px;
+	}
+}
 
-                @media only screen and (max-height:385px) {
-                    .round-game {
-            
-                        height: 335px;
-                    }
-                   
-                   
-                    }
+@media only screen and (max-height:430px) {
+	.round-game {
+		height: 370px;
+	}
+}
 
-                    @media only screen and (max-height:385px) {
-                        .round-game {
-                
-                            height: 335px;
-                        }
-                       
-                       
-                        }
+@media only screen and (max-height:385px) {
+	.round-game {
+		height: 335px;
+	}
 
+	#mg div {
+		height: 130px;
+		line-height: 160px;
+	}
+}
+
+@media only screen and (max-height:385px) {
+	.round-game {
+		height: 335px;
+	}
+}
+
+
+@media only screen and (max-height:360px) {
+	.round-game {
+		height: 320px;
+	}
+}
+
+@media only screen and (max-height:320px) {
+	#mg div {
+		height: 120px;
+		line-height: 120px;
+	}
+}
+
+*/
