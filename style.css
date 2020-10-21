@@ -59,7 +59,7 @@ html {
 	background-color: rgb(209, 111, 255);
 }
 #mg p {
-font-size:16px;
+font-size:13px;
 }
 .g-main {
 	display: none;
@@ -247,6 +247,8 @@ font-size:16px;
 	display: flex;
 }
 
+
+
 @media only screen and (min-width:600px) {
 	#baucua .naphop {
 		background-color: blue;
@@ -353,6 +355,19 @@ font-size:16px;
 }
 
 
+
+@media only screen and (min-height:700px) {
+	.round-game {
+		width: 80%;
+		height: 650px !important;
+
+	}
+
+
+} 
+
+
+
 @media only screen and (max-height:620px) {
 	body {
 		transform: scale(0.9);
@@ -364,16 +379,9 @@ font-size:16px;
 
 	}
 	.round-game {
-		width: 80%;
+
 		height: 508px !important;
-		background-color: rgb(114, 111, 255);
-		position: relative;
-		margin: 0 auto;
-		width: 90%;
-		height: 550px;
-		border: 1px solid black;
-		display: flex;
-		align-items: center;
+
 	}
 	p {
 		font-size: 13px;
@@ -399,16 +407,9 @@ font-size:16px;
 
 	}
 	.round-game {
-		width: 80%;
+
 		height: 420px !important;
-		background-color: rgb(114, 111, 255);
-		position: relative;
-		margin: 0 auto;
-		width: 90%;
-		height: 550px;
-		border: 1px solid black;
-		display: flex;
-		align-items: center;
+
 	}
 
 	img {
