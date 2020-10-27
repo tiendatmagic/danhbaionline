@@ -65,12 +65,11 @@ font-size:13px;
 
 .round-game {
 	width: 80%;
-	height: 650px;
+
 	background-color: rgb(114, 111, 255);
 	position: relative;
 	margin: 0 auto;
-	width: 90%;
-	height: 550px;
+	height: 87vh;
 	border: 1px solid black;
 	display: flex;
 	align-items: center;
@@ -179,8 +178,7 @@ font-size:13px;
 }
 
 .bdmain {
-	background-color: rgb(79, 255, 62);
-	
+	background-color: rgb(79, 255, 62);	
 	border-radius: 15px;
 	outline: none;
 	border: none;
@@ -190,8 +188,9 @@ font-size:13px;
 	display: flex;
 	margin: auto;
 	margin-top: 36vh;
-	padding: 3vh;
+	padding: 2vh;
 	font-size: 3.3vh;
+	z-index: 10;
 }
 
 .player1,
@@ -213,9 +212,9 @@ font-size:13px;
 	
 }
 
-.player1 .card {
+.player1 .card, .player2 .card  {
 
-	height: 36%;
+	height: 9vh;
 }
 
 .player2 {
@@ -229,10 +228,7 @@ font-size:13px;
 	align-items: center;
 }
 
-.player2 .card {
 
-	height: 36%;
-}
 .card {
 	display: none;
 }
@@ -261,16 +257,23 @@ font-size:13px;
 }
 
 
+@media only screen and (min-width:1024px) {
 
-@media only screen and (min-width:600px) {
-	#baucua .naphop {
-		background-color: blue;
+	
+	.player1,
+	.player2 {
+
+		height: 35vh;
+		/* z-index: -1; */
 	}
 
-	.naphop img {
-		margin-left: 10px;
+	.player1 .card, .player2 .card  {
+
+		height: 13vh;
 	}
 }
+
+
 
 @media only screen and (max-width:450px) {
 	#baucua .naphop {
@@ -323,6 +326,16 @@ font-size:13px;
 	}
 }
 
+@media only screen and (min-width:600px) {
+	#baucua .naphop {
+		background-color: blue;
+	}
+
+	.naphop img {
+		margin-left: 10px;
+	}
+}
+
 @media only screen and (max-width:480px) {
 	#mg div {
 		width: 120px;
@@ -350,11 +363,19 @@ font-size:13px;
 
 @media only screen and (max-width:320px) {
 	#mg div {
-		width: 110px;
-		height: 130px;
-		line-height: 130px;
-		font-size: 14px;
+		width: 100px;
+		height: 23vh;
+		line-height: 23vh;
+		font-size: 10px;
 	}
+
+	.player1 .card, .player2 .card  {
+
+		height: 13vh;
+	}
+
+
+	
 }
 
 
@@ -365,57 +386,6 @@ font-size:13px;
 		line-height: 60px;
 		font-size: 12px;
 	}
-}
-
-
-
-@media only screen and (min-height:700px) {
-	.round-game {
-		width: 80%;
-		height: 650px !important;
-
-	}
-
-
-} 
-
-
-
-@media only screen and (max-height:620px) {
-
-
-
-	.round-game {
-
-		height: 508px !important;
-
-	}
-	p {
-		font-size: 13px;
-	}
-
-}
-
-@media only screen and (max-height:560px) {
-
-	#mg div {
-		width: 100px;
-		height: 100px;
-		line-height: 100px;
-
-	}
-
-	
-	.round-game {
-
-		height: 420px !important;
-
-	}
-
-	img {
-		transform: scale(0.8);
-	}
-
 }
 
 
