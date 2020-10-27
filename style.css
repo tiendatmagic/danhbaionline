@@ -14,27 +14,25 @@ html {
 	-ms-user-select: none;
 	-o-user-select: none;
 	user-select: none;
-	overflow: hidden;
+
 }
 
-#login {
-	width: 100%;
-	height: 400px;
-	display: flex;
-	align-items: center;
-}
+
 
 .start {
 	background-color: rgb(79, 255, 62);
-	padding: 30px;
+	
 	border-radius: 15px;
 	outline: none;
 	border: none;
 	justify-content: center;
 	cursor: pointer;
-	font-size: 25px;
-    margin: auto;
-    /* z-index: 999999999999; */
+		
+	display: flex;
+	margin: auto;
+	margin-top: 36vh;
+	padding: 6vh;
+	font-size: 3.3vh;
 }
 
 #mg {
@@ -205,8 +203,14 @@ font-size:13px;
 	width: 100%;
 	text-align: center;
 	justify-content: center;
-	margin: 0 auto;
+
 	align-items: center;
+	
+}
+
+.player1 .card {
+
+	height: 36%;
 }
 
 .player2 {
@@ -220,6 +224,10 @@ font-size:13px;
 	align-items: center;
 }
 
+.player2 .card {
+
+	height: 36%;
+}
 .card {
 	display: none;
 }
@@ -369,9 +377,7 @@ font-size:13px;
 
 
 @media only screen and (max-height:620px) {
-	body {
-		transform: scale(0.9);
-	}
+
 
 	.bdmain {
 
@@ -390,9 +396,7 @@ font-size:13px;
 }
 
 @media only screen and (max-height:560px) {
-	body {
-		transform: scale(0.9);
-	}
+
 	#mg div {
 		width: 100px;
 		height: 100px;
@@ -419,99 +423,3 @@ font-size:13px;
 }
 
 
-/*
-
-@media only screen and (max-height:500px) {
-	body {
-		transform: scale(0.9);
-	}
-
-	.round-game {
-		height: 460px;
-	}
-}
-
-@media only screen and (max-height:500px) {
-	#mg div {
-		transform: scale(0.9);
-	}
-
-	.round-game {
-		transform: scale(0.8);
-	}
-}
-
-@media only screen and (max-height:480px) {
-	body {
-		transform: scale(0.8);
-	}
-}
-
-@media only screen and (max-height:470px) {
-	.round-game {
-		height: 440px;
-	}
-
-	#mg div {
-		transform: scale(0.8);
-	}
-}
-
-@media only screen and (max-height:460px) {
-
-	#mg div {
-		transform: scale(0.7);
-	}
-}
-
-@media only screen and (max-height:450px) {
-	.round-game {
-		height: 400px;
-	}
-}
-
-@media only screen and (max-height:447px) {
-	#mg div {
-		height: 160px;
-		line-height: 160px;
-	}
-}
-
-@media only screen and (max-height:430px) {
-	.round-game {
-		height: 370px;
-	}
-}
-
-@media only screen and (max-height:385px) {
-	.round-game {
-		height: 335px;
-	}
-
-	#mg div {
-		height: 130px;
-		line-height: 160px;
-	}
-}
-
-@media only screen and (max-height:385px) {
-	.round-game {
-		height: 335px;
-	}
-}
-
-
-@media only screen and (max-height:360px) {
-	.round-game {
-		height: 320px;
-	}
-}
-
-@media only screen and (max-height:320px) {
-	#mg div {
-		height: 120px;
-		line-height: 120px;
-	}
-}
-
-*/
