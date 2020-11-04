@@ -14,7 +14,7 @@ html {
 	-ms-user-select: none;
 	-o-user-select: none;
 	user-select: none;
-
+	overflow: hidden;
 }
 
 
@@ -48,7 +48,6 @@ html {
 	line-height: 200px;
 	background-color: rgb(114, 111, 255);
 	margin: 20px;
-
 	border-radius: 20%;
 	word-break: break-all;
 }
@@ -57,7 +56,7 @@ html {
 	background-color: rgb(209, 111, 255);
 }
 #mg p {
-font-size:13px;
+font-size: 2vh;
 }
 .g-main {
 	display: none;
@@ -140,6 +139,9 @@ font-size:13px;
 	font-size: 20px;
 }
 
+.bc span {
+	font-size: 3vw;
+}
 #baucua .naphop {
 	display: flex;
 	width: 100%;
@@ -156,8 +158,7 @@ font-size:13px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	width: 100%;
-	height: 100%;
+
 }
 
 #dcc div {
@@ -261,7 +262,11 @@ font-size:13px;
 	margin-left: 10px;
 }
 
-
+@media only screen and (max-width:900px) {
+	#allbc {
+		margin-top: 15vh;
+	}
+}
 @media only screen and (min-width:1024px) {
 
 	
@@ -276,6 +281,10 @@ font-size:13px;
 
 		height: 13vh;
 	}
+
+	#mg p {
+		font-size: 4vh;
+		}
 }
 
 
@@ -304,7 +313,7 @@ font-size:13px;
 		width: 50%;
 		height: 60px;
 		line-height: 60px;
-		font-size: 12px;
+	
 	}
 }
 
@@ -329,7 +338,7 @@ font-size:13px;
 		width: 120px;
 		height: 160px;
 		line-height: 160px;
-		font-size: 17px;
+	
 	}
 
 	#selectmoney div {
@@ -343,7 +352,7 @@ font-size:13px;
 		width: 120px;
 		height: 130px;
 		line-height: 130px;
-		font-size: 17px;
+		
 	}
 
 	#selectmoney div {
@@ -373,7 +382,7 @@ font-size:13px;
 		width: 100px;
 		height: 23vh;
 		line-height: 23vh;
-		font-size: 10px;
+	
 	}
 
 	.player1 .card, .player2 .card  {
