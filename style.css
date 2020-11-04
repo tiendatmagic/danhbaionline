@@ -255,12 +255,13 @@ html {
 }
 
 .back {
-	padding: 3%;
+	padding: 2vh;
     background-color: greenyellow;
     border-radius: 50%;
 	position: relative;
-	top:20px;
-	margin-bottom: 
+	top: 3vh;
+	font-size: 2.5vw;
+
 }
 @media only screen and (max-width:900px) {
 	#allbc {
