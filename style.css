@@ -17,17 +17,13 @@ html {
 	overflow: hidden;
 }
 
-
-
 .start {
 	background-color: rgb(79, 255, 62);
-	
 	border-radius: 15px;
 	outline: none;
 	border: none;
 	justify-content: center;
 	cursor: pointer;
-		
 	display: flex;
 	margin: auto;
 	margin-top: 36vh;
@@ -55,16 +51,17 @@ html {
 #mg div:hover {
 	background-color: rgb(209, 111, 255);
 }
+
 #mg p {
-font-size: 2vh;
+	font-size: 2vh;
 }
+
 .g-main {
 	display: none;
 }
 
 .round-game {
 	width: 80%;
-
 	background-color: rgb(114, 111, 255);
 	position: relative;
 	margin: 0 auto;
@@ -142,6 +139,7 @@ font-size: 2vh;
 .bc span {
 	font-size: 3vw;
 }
+
 #baucua .naphop {
 	display: flex;
 	width: 100%;
@@ -158,7 +156,6 @@ font-size: 2vh;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-
 }
 
 #dcc div {
@@ -168,10 +165,9 @@ font-size: 2vh;
 	margin-left: 5vw;
 	border-radius: 10%;
 	font-size: 2vh;
-
 }
 
-#dcc span {	
+#dcc span {
 	display: flex;
 	align-items: center;
 	height: 100%;
@@ -181,13 +177,12 @@ font-size: 2vh;
 }
 
 .bdmain {
-	background-color: rgb(79, 255, 62);	
+	background-color: rgb(79, 255, 62);
 	border-radius: 15px;
 	outline: none;
 	border: none;
 	justify-content: center;
 	cursor: pointer;
-		
 	display: flex;
 	margin: auto;
 	margin-top: 36vh;
@@ -199,8 +194,8 @@ font-size: 2vh;
 .player1,
 .player2 {
 	width: 300px;
-    height: 200px;
-    /* z-index: -1; */
+	height: 200px;
+    /* z-index: -1; */;
 }
 
 .player1 {
@@ -211,11 +206,9 @@ font-size: 2vh;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	
 }
 
-.player1 .card, .player2 .card  {
-
+.player1 .card, .player2 .card {
 	height: 9vh;
 }
 
@@ -229,7 +222,6 @@ font-size: 2vh;
 	margin: 0 auto;
 	align-items: center;
 }
-
 
 .card {
 	display: none;
@@ -267,32 +259,26 @@ font-size: 2vh;
 		margin-top: 15vh;
 	}
 }
+
 @media only screen and (min-width:1024px) {
 
 	
 	.player1,
 	.player2 {
-
 		height: 35vh;
-	
 	}
 
-	.player1 .card, .player2 .card  {
-
+	.player1 .card, .player2 .card {
 		height: 13vh;
 	}
 
 	#mg p {
 		font-size: 4vh;
-		}
+	}
 }
 
-
-
 @media only screen and (max-width:450px) {
-	#baucua .naphop {
-		background-color: green;
-	}
+
 
 	.naphop img {
 		width: 70px;
@@ -300,9 +286,7 @@ font-size: 2vh;
 }
 
 @media only screen and (max-width:300px) {
-	#baucua .naphop {
-		background-color: green;
-	}
+
 
 	.naphop img {
 		width: 50px;
@@ -313,7 +297,6 @@ font-size: 2vh;
 		width: 50%;
 		height: 60px;
 		line-height: 60px;
-	
 	}
 }
 
@@ -338,7 +321,6 @@ font-size: 2vh;
 		width: 120px;
 		height: 160px;
 		line-height: 160px;
-	
 	}
 
 	#selectmoney div {
@@ -352,7 +334,6 @@ font-size: 2vh;
 		width: 120px;
 		height: 130px;
 		line-height: 130px;
-		
 	}
 
 	#selectmoney div {
@@ -382,18 +363,12 @@ font-size: 2vh;
 		width: 100px;
 		height: 23vh;
 		line-height: 23vh;
-	
 	}
 
-	.player1 .card, .player2 .card  {
-
+	.player1 .card, .player2 .card {
 		height: 13vh;
 	}
-
-
-	
 }
-
 
 @media only screen and (max-width:280px) {
 	.naphop img {
@@ -401,4 +376,3 @@ font-size: 2vh;
 		height: 65px;
 	}
 }
-
