@@ -642,7 +642,7 @@ function checkbc() {
 }
 function baucuaa() {
 	clearInterval(timebc);
-	time = 10;
+	time = 1;
 	dcbc1 = 0;
 	dcbc2 = 0;
 	dcbc3 = 0;

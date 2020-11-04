@@ -257,6 +257,10 @@ font-size:13px;
 	display: flex;
 }
 
+.naphop img {
+	margin-left: 10px;
+}
+
 
 @media only screen and (min-width:1024px) {
 
@@ -327,12 +331,6 @@ font-size:13px;
 	}
 }
 
-@media only screen and (min-width:600px) {
-	.naphop img {
-		margin-left: 10px;
-	}
-}
-
 @media only screen and (max-width:480px) {
 	#mg div {
 		width: 120px;
@@ -355,6 +353,11 @@ font-size:13px;
 	#selectmoney div {
 		width: 70px;
 		height: 110px;
+	}
+
+	.naphop img {
+		width: 65px;
+		height: 85px;
 	}
 }
 
