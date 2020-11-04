@@ -299,6 +299,10 @@ document.getElementsByClassName("dc-5000")[0].addEventListener("click", function
 	document.getElementsByClassName("dc-5000")[0].setAttribute('style', 'background-color: deeppink !important');
 
 });
+
+document.getElementsByClassName("back")[0].addEventListener("click",function() {
+	location.reload();
+});
 //
 document.getElementsByClassName("bc")[0].addEventListener("click", function () {
 	if (checkbcc === 0) {
