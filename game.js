@@ -264,29 +264,40 @@ document.getElementsByClassName("dc-500")[0].addEventListener("click", function 
 	//dcbc += 500;
 
 	ondc = 500;
+	//
+	document.getElementsByClassName("dc-500")[0].setAttribute('style', 'background-color: deeppink !important');
+
+
 
 });
 document.getElementsByClassName("dc-1000")[0].addEventListener("click", function () {
 	//dcbc += 1000;
 
 	ondc = 1000;
+	document.getElementsByClassName("dc-1000")[0].setAttribute('style', 'background-color: deeppink !important');
+
 });
 document.getElementsByClassName("dc-2000")[0].addEventListener("click", function () {
 	//	dcbc += 2000;
 
 	ondc = 2000;
+	document.getElementsByClassName("dc-2000")[0].setAttribute('style', 'background-color: deeppink !important');
+
 
 });
 document.getElementsByClassName("dc-3000")[0].addEventListener("click", function () {
 	//dcbc += 3000;
 
 	ondc = 3000;
+	document.getElementsByClassName("dc-3000")[0].setAttribute('style', 'background-color: deeppink !important');
 
 });
 document.getElementsByClassName("dc-5000")[0].addEventListener("click", function () {
 	//dcbc += 5000;
 
 	ondc = 5000;
+	document.getElementsByClassName("dc-5000")[0].setAttribute('style', 'background-color: deeppink !important');
+
 });
 //
 document.getElementsByClassName("bc")[0].addEventListener("click", function () {
@@ -307,6 +318,8 @@ document.getElementsByClassName("bc")[0].addEventListener("click", function () {
 		//ondc = 0
 		//ondc1 +=1;
 		dcbc1 += ondc;
+		document.getElementsByClassName("bc")[0].setAttribute('style', 'background-color: deeppink !important');
+
 	}
 
 });
@@ -326,6 +339,8 @@ document.getElementsByClassName("bc")[1].addEventListener("click", function () {
 		//	ondc = 0;
 		//ondc1 +=1;
 		dcbc2 += ondc;
+		document.getElementsByClassName("bc")[1].setAttribute('style', 'background-color: deeppink !important');
+
 	}
 
 });
@@ -346,6 +361,8 @@ document.getElementsByClassName("bc")[2].addEventListener("click", function () {
 		//	ondc = 0;
 		//ondc1 +=1;
 		dcbc3 += ondc;
+		document.getElementsByClassName("bc")[2].setAttribute('style', 'background-color: deeppink !important');
+
 	}
 
 });
@@ -366,6 +383,8 @@ document.getElementsByClassName("bc")[3].addEventListener("click", function () {
 		//ondc = 0;
 		//ondc1 +=1;
 		dcbc4 += ondc;
+		document.getElementsByClassName("bc")[3].setAttribute('style', 'background-color: deeppink !important');
+
 	}
 
 });
@@ -386,6 +405,8 @@ document.getElementsByClassName("bc")[4].addEventListener("click", function () {
 		//ondc = 0;
 		//ondc1 +=1;
 		dcbc5 += ondc;
+		document.getElementsByClassName("bc")[4].setAttribute('style', 'background-color: deeppink !important');
+
 	}
 
 });
@@ -406,6 +427,8 @@ document.getElementsByClassName("bc")[5].addEventListener("click", function () {
 		//ondc = 0;
 		//ondc1 +=1;
 		dcbc6 += ondc;
+		document.getElementsByClassName("bc")[5].setAttribute('style', 'background-color: deeppink !important');
+
 	}
 
 });
@@ -634,21 +657,41 @@ function checkbc() {
 		}
 		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 	}
-	setTimeout(function() {
+	setTimeout(function () {
 		checkbcc = 0;
-	},5000)
+	}, 5000)
 	//alert("OK");
 	setTimeout(baucuaa, 3000);
 }
 function baucuaa() {
 	clearInterval(timebc);
-	time = 1;
+	time = 10;
 	dcbc1 = 0;
 	dcbc2 = 0;
 	dcbc3 = 0;
 	dcbc4 = 0;
 	dcbc5 = 0;
 	dcbc6 = 0;
+
+	document.getElementsByClassName("dc-500")[0].setAttribute('style', 'background-color: rgb(114, 111, 255) !important');
+	document.getElementsByClassName("dc-1000")[0].setAttribute('style', 'background-color: rgb(114, 111, 255) !important');
+	document.getElementsByClassName("dc-2000")[0].setAttribute('style', 'background-color: rgb(114, 111, 255) !important');
+	document.getElementsByClassName("dc-3000")[0].setAttribute('style', 'background-color: rgb(114, 111, 255) !important');
+	document.getElementsByClassName("dc-5000")[0].setAttribute('style', 'background-color: rgb(114, 111, 255) !important');
+
+	document.getElementsByClassName("bc")[0].setAttribute('style', 'background-color: rgb(114, 111, 255) !important');
+	document.getElementsByClassName("bc")[1].setAttribute('style', 'background-color: rgb(114, 111, 255) !important');
+
+	document.getElementsByClassName("bc")[2].setAttribute('style', 'background-color: rgb(114, 111, 255) !important');
+
+	document.getElementsByClassName("bc")[3].setAttribute('style', 'background-color: rgb(114, 111, 255) !important');
+
+	document.getElementsByClassName("bc")[4].setAttribute('style', 'background-color: rgb(114, 111, 255) !important');
+
+	document.getElementsByClassName("bc")[5].setAttribute('style', 'background-color: rgb(114, 111, 255) !important');
+
+
+
 
 	document.getElementById("baucuaa").style.display = 'block';
 	document.getElementsByClassName("bc1")[0].style.display = 'none';
