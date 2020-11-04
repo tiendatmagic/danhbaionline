@@ -161,12 +161,13 @@ font-size:13px;
 }
 
 #dcc div {
-	width: 16vw;
-	height: 11vh;
+	width: 14vw;
+	height: 5vh;
 	background-color: rgb(114, 111, 255);
-	margin: 10px;
+	margin-left: 5vw;
 	border-radius: 10%;
-	font-size: 20px;
+	font-size: 2vh;
+
 }
 
 #dcc span {
@@ -207,7 +208,6 @@ font-size:13px;
 	width: 100%;
 	text-align: center;
 	justify-content: center;
-
 	align-items: center;
 	
 }
@@ -264,7 +264,7 @@ font-size:13px;
 	.player2 {
 
 		height: 35vh;
-		/* z-index: -1; */
+	
 	}
 
 	.player1 .card, .player2 .card  {
