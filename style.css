@@ -255,7 +255,7 @@ html {
 }
 
 .back {
-	padding: 1.5vh;
+	padding: 2vh;
     background-color: greenyellow;
     border-radius: 50%;
 	position: relative;
@@ -281,6 +281,9 @@ html {
 		height: 13vh;
 	}
 
+	#mg p {
+		font-size: 26px;
+	}
 	
 }
 
