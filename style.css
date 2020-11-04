@@ -53,7 +53,7 @@ html {
 }
 
 #mg p {
-	font-size: 2vh;
+	font-size: 2.6vw;
 }
 
 .g-main {
@@ -255,12 +255,12 @@ html {
 }
 
 .back {
-	padding: 2vh;
+	padding: 1.5vh;
     background-color: greenyellow;
     border-radius: 50%;
 	position: relative;
-	top: 3vh;
-	font-size: 2.5vw;
+	top: 2.2vh;
+	font-size: 2vh;
 
 }
 @media only screen and (max-width:900px) {
@@ -281,9 +281,7 @@ html {
 		height: 13vh;
 	}
 
-	#mg p {
-		font-size: 4vh;
-	}
+	
 }
 
 @media only screen and (max-width:450px) {
