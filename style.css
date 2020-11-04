@@ -132,8 +132,8 @@ font-size:13px;
 }
 
 #baucua div {
-	width: 200px;
-	height: 120px;
+	width: 20vw;
+	height: 15vh;
 	background-color: rgb(114, 111, 255);
 	margin: 10px;
 	border-radius: 50%;
@@ -161,8 +161,8 @@ font-size:13px;
 }
 
 #dcc div {
-	width: 150px;
-	height: 100px;
+	width: 16vw;
+	height: 11vh;
 	background-color: rgb(114, 111, 255);
 	margin: 10px;
 	border-radius: 10%;
@@ -174,7 +174,7 @@ font-size:13px;
 	align-items: center;
 	height: 100%;
 	text-align: center;
-	margin-left: 40%;
+	text-indent: 30%;
 }
 
 .bdmain {
@@ -327,10 +327,6 @@ font-size:13px;
 }
 
 @media only screen and (min-width:600px) {
-	#baucua .naphop {
-		background-color: blue;
-	}
-
 	.naphop img {
 		margin-left: 10px;
 	}
