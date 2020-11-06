@@ -307,6 +307,7 @@ document.getElementsByClassName("back")[0].addEventListener("click", function ()
 document.getElementsByClassName("bc")[0].addEventListener("click", function () {
 	if (money - dcbc <= 0 && dcbc >= money) {
 		alert("hết tiển rồi");
+		vayno();
 
 	}
 	else {
@@ -342,7 +343,7 @@ document.getElementsByClassName("bc")[0].addEventListener("click", function () {
 document.getElementsByClassName("bc")[1].addEventListener("click", function () {
 	if (money - dcbc <= 0 && dcbc >= money) {
 		alert("hết tiển rồi");
-
+		vayno();
 	}
 	else {
 		if (ondc === 0) {
@@ -374,7 +375,7 @@ document.getElementsByClassName("bc")[1].addEventListener("click", function () {
 document.getElementsByClassName("bc")[2].addEventListener("click", function () {
 	if (money - dcbc <= 0 && dcbc >= money) {
 		alert("hết tiển rồi");
-
+		vayno();
 	}
 	else {
 		if (ondc === 0) {
@@ -407,7 +408,7 @@ document.getElementsByClassName("bc")[2].addEventListener("click", function () {
 document.getElementsByClassName("bc")[3].addEventListener("click", function () {
 	if (money - dcbc <= 0 && dcbc >= money) {
 		alert("hết tiển rồi");
-
+		vayno();
 	}
 	else {
 		if (ondc === 0) {
@@ -439,7 +440,7 @@ document.getElementsByClassName("bc")[3].addEventListener("click", function () {
 document.getElementsByClassName("bc")[4].addEventListener("click", function () {
 	if (money - dcbc <= 0 && dcbc >= money) {
 		alert("hết tiển rồi");
-
+		vayno();
 	}
 	else {
 		if (ondc === 0) {
@@ -472,7 +473,7 @@ document.getElementsByClassName("bc")[4].addEventListener("click", function () {
 document.getElementsByClassName("bc")[5].addEventListener("click", function () {
 	if (money - dcbc <= 0 && dcbc >= money) {
 		alert("hết tiển rồi");
-
+		vayno();
 	}
 	else {
 		if (ondc === 0) {
@@ -833,7 +834,7 @@ function setup() {
 function phatbai() {
 	if (money - dc <= 0 && dc > money) {
 		alert("hết tiển rồi");
-
+		vayno();
 	}
 
 	else {
@@ -1519,5 +1520,17 @@ function checkxd() {
 		if (li2 === 3) {
 			document.getElementsByClassName("statusp2")[0].innerText = "AI Sáp";
 		}
+	}
+}
+
+function vayno() {
+	if (money <= 0) {
+		var fmoney = getCookie("fmoney");
+		money = 1500;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
 	}
 }
