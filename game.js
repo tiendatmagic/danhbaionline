@@ -300,139 +300,205 @@ document.getElementsByClassName("dc-5000")[0].addEventListener("click", function
 
 });
 
-document.getElementsByClassName("back")[0].addEventListener("click",function() {
+document.getElementsByClassName("back")[0].addEventListener("click", function () {
 	location.reload();
 });
 //
 document.getElementsByClassName("bc")[0].addEventListener("click", function () {
-	if (checkbcc === 0) {
-		bca1 = 1;
-		//dcc += dcbc;
-		var fmoney = getCookie("fmoney");
-
-		money -= ondc;
-
-		fmoney = money;
-		if (fmoney != null) {
-			setCookie("fmoney", fmoney, 30);
-		}
-
-		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
-
-		//ondc = 0
-		//ondc1 +=1;
-		dcbc1 += ondc;
-		document.getElementsByClassName("bc")[0].setAttribute('style', 'background-color: deeppink !important');
+	if (money - dcbc <= 0 && dcbc >= money) {
+		alert("hết tiển rồi");
 
 	}
+	else {
+		if (ondc === 0) {
+			alert("Chưa đặt tiền cược");
+		}
+		else {
 
+
+			if (checkbcc === 0) {
+				bca1 = 1;
+				//dcc += dcbc;
+				var fmoney = getCookie("fmoney");
+
+				money -= ondc;
+
+				fmoney = money;
+				if (fmoney != null) {
+					setCookie("fmoney", fmoney, 30);
+				}
+
+				document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+
+				//ondc = 0
+				//ondc1 +=1;
+				dcbc1 += ondc;
+				document.getElementsByClassName("bc")[0].setAttribute('style', 'background-color: deeppink !important');
+
+			}
+		}
+	}
 });
 document.getElementsByClassName("bc")[1].addEventListener("click", function () {
-	if (checkbcc === 0) {
-		bca2 = 1;
-		var fmoney = getCookie("fmoney");
+	if (money - dcbc <= 0 && dcbc >= money) {
+		alert("hết tiển rồi");
 
-		money -= ondc;
-
-		fmoney = money;
-		if (fmoney != null) {
-			setCookie("fmoney", fmoney, 30);
+	}
+	else {
+		if (ondc === 0) {
+			alert("Chưa đặt tiền cược");
 		}
-		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+		else {
+			if (checkbcc === 0) {
+				bca2 = 1;
+				var fmoney = getCookie("fmoney");
 
-		//	ondc = 0;
-		//ondc1 +=1;
-		dcbc2 += ondc;
-		document.getElementsByClassName("bc")[1].setAttribute('style', 'background-color: deeppink !important');
+				money -= ondc;
 
+				fmoney = money;
+				if (fmoney != null) {
+					setCookie("fmoney", fmoney, 30);
+				}
+				document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+
+				//	ondc = 0;
+				//ondc1 +=1;
+				dcbc2 += ondc;
+				document.getElementsByClassName("bc")[1].setAttribute('style', 'background-color: deeppink !important');
+
+			}
+		}
 	}
 
 });
 document.getElementsByClassName("bc")[2].addEventListener("click", function () {
-	if (checkbcc === 0) {
-		bca3 = 1;
+	if (money - dcbc <= 0 && dcbc >= money) {
+		alert("hết tiển rồi");
 
-		var fmoney = getCookie("fmoney");
-
-		money -= ondc;
-
-		fmoney = money;
-		if (fmoney != null) {
-			setCookie("fmoney", fmoney, 30);
+	}
+	else {
+		if (ondc === 0) {
+			alert("Chưa đặt tiền cược");
 		}
-		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+		else {
+			if (checkbcc === 0) {
+				bca3 = 1;
 
-		//	ondc = 0;
-		//ondc1 +=1;
-		dcbc3 += ondc;
-		document.getElementsByClassName("bc")[2].setAttribute('style', 'background-color: deeppink !important');
+				var fmoney = getCookie("fmoney");
 
+				money -= ondc;
+
+				fmoney = money;
+				if (fmoney != null) {
+					setCookie("fmoney", fmoney, 30);
+				}
+				document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+
+				//	ondc = 0;
+				//ondc1 +=1;
+				dcbc3 += ondc;
+				document.getElementsByClassName("bc")[2].setAttribute('style', 'background-color: deeppink !important');
+
+			}
+		}
 	}
 
 });
 document.getElementsByClassName("bc")[3].addEventListener("click", function () {
-	if (checkbcc === 0) {
-		bca4 = 1;
-
-		var fmoney = getCookie("fmoney");
-
-		money -= ondc;
-
-		fmoney = money;
-		if (fmoney != null) {
-			setCookie("fmoney", fmoney, 30);
-		}
-		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
-
-		//ondc = 0;
-		//ondc1 +=1;
-		dcbc4 += ondc;
-		document.getElementsByClassName("bc")[3].setAttribute('style', 'background-color: deeppink !important');
+	if (money - dcbc <= 0 && dcbc >= money) {
+		alert("hết tiển rồi");
 
 	}
+	else {
+		if (ondc === 0) {
+			alert("Chưa đặt tiền cược");
+		}
+		else {
+			if (checkbcc === 0) {
+				bca4 = 1;
 
+				var fmoney = getCookie("fmoney");
+
+				money -= ondc;
+
+				fmoney = money;
+				if (fmoney != null) {
+					setCookie("fmoney", fmoney, 30);
+				}
+				document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+
+				//ondc = 0;
+				//ondc1 +=1;
+				dcbc4 += ondc;
+				document.getElementsByClassName("bc")[3].setAttribute('style', 'background-color: deeppink !important');
+
+			}
+		}
+	}
 });
 document.getElementsByClassName("bc")[4].addEventListener("click", function () {
-	if (checkbcc === 0) {
-		bca5 = 1;
+	if (money - dcbc <= 0 && dcbc >= money) {
+		alert("hết tiển rồi");
 
-		var fmoney = getCookie("fmoney");
-
-		money -= ondc;
-
-		fmoney = money;
-		if (fmoney != null) {
-			setCookie("fmoney", fmoney, 30);
+	}
+	else {
+		if (ondc === 0) {
+			alert("Chưa đặt tiền cược");
 		}
-		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+		else {
+			if (checkbcc === 0) {
+				bca5 = 1;
 
-		//ondc = 0;
-		//ondc1 +=1;
-		dcbc5 += ondc;
-		document.getElementsByClassName("bc")[4].setAttribute('style', 'background-color: deeppink !important');
+				var fmoney = getCookie("fmoney");
 
+				money -= ondc;
+
+				fmoney = money;
+				if (fmoney != null) {
+					setCookie("fmoney", fmoney, 30);
+				}
+				document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+
+				//ondc = 0;
+				//ondc1 +=1;
+				dcbc5 += ondc;
+				document.getElementsByClassName("bc")[4].setAttribute('style', 'background-color: deeppink !important');
+
+			}
+		}
 	}
 
 });
 document.getElementsByClassName("bc")[5].addEventListener("click", function () {
-	if (checkbcc === 0) {
-		bca6 = 1;
+	if (money - dcbc <= 0 && dcbc >= money) {
+		alert("hết tiển rồi");
 
-		var fmoney = getCookie("fmoney");
-
-		money -= ondc;
-
-		fmoney = money;
-		if (fmoney != null) {
-			setCookie("fmoney", fmoney, 30);
+	}
+	else {
+		if (ondc === 0) {
+			alert("Chưa đặt tiền cược");
 		}
-		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+		else {
+			if (checkbcc === 0) {
+				bca6 = 1;
 
-		//ondc = 0;
-		//ondc1 +=1;
-		dcbc6 += ondc;
-		document.getElementsByClassName("bc")[5].setAttribute('style', 'background-color: deeppink !important');
+				var fmoney = getCookie("fmoney");
 
+				money -= ondc;
+
+				fmoney = money;
+				if (fmoney != null) {
+					setCookie("fmoney", fmoney, 30);
+				}
+				document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+
+				//ondc = 0;
+				//ondc1 +=1;
+				dcbc6 += ondc;
+				document.getElementsByClassName("bc")[5].setAttribute('style', 'background-color: deeppink !important');
+
+			}
+		}
 	}
 
 });
@@ -668,6 +734,7 @@ function checkbc() {
 	setTimeout(baucuaa, 3000);
 }
 function baucuaa() {
+	ondc = 0;
 	clearInterval(timebc);
 	time = 10;
 	dcbc1 = 0;
@@ -764,136 +831,142 @@ function setup() {
 }
 
 function phatbai() {
-	li1 = 0;
-	li2 = 0;
-	document.getElementsByClassName("bdmain")[0].style.display = 'none';
-	document.getElementsByClassName("statusp1")[0].innerText = "";
-	document.getElementsByClassName("statusp2")[0].innerText = "";
-	document.getElementsByClassName("status")[0].style.display = 'none';
-	document.getElementsByClassName("status")[1].style.display = 'none';
-	var fmoney = getCookie("fmoney");
-	money -= dc;
-	fmoney = money;
-	if (fmoney != null) {
-		setCookie("fmoney", fmoney, 30);
-	}
-	document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
-	card1 = Math.ceil(Math.random() * 52);
-	card2 = Math.ceil(Math.random() * 52);
-	card3 = Math.ceil(Math.random() * 52);
-	card7 = Math.ceil(Math.random() * 52);
-	card8 = Math.ceil(Math.random() * 52);
-	card4 = Math.ceil(Math.random() * 52);
-	card5 = Math.ceil(Math.random() * 52);
-	card6 = Math.ceil(Math.random() * 52);
-	card9 = Math.ceil(Math.random() * 52);
-	card10 = Math.ceil(Math.random() * 52);
-	if (selectgame === 1) {
-		document.getElementsByClassName("card")[0].style.display = "inline-block";
-		document.getElementsByClassName("card")[1].style.display = "inline-block";
-		document.getElementsByClassName("card")[2].style.display = "inline-block";
-		document.getElementsByClassName("card")[5].style.display = "inline-block";
-		document.getElementsByClassName("card")[6].style.display = "inline-block";
-		document.getElementsByClassName("card")[7].style.display = "inline-block";
-		ccard1();
-		document.getElementsByClassName("card1")[0].setAttribute("src", "./img/b2fv.gif");
-		document.getElementsByClassName("card1")[0].addEventListener("click", ccard1);
-		ccard2();
-		document.getElementsByClassName("card2")[0].setAttribute("src", "./img/b2fv.gif");
-		document.getElementsByClassName("card2")[0].addEventListener("click", ccard2);
-		ccard3();
-		document.getElementsByClassName("card3")[0].setAttribute("src", "./img/b2fv.gif");
-		document.getElementsByClassName("card3")[0].addEventListener("click", ccard3);
-		ccard4();
-		document.getElementsByClassName("card4")[0].setAttribute("src", "./img/b2fv.gif");
-		ccard5();
-		document.getElementsByClassName("card5")[0].setAttribute("src", "./img/b2fv.gif");
-		ccard6();
-		document.getElementsByClassName("card6")[0].setAttribute("src", "./img/b2fv.gif");
-		setTimeout(check, 5000);
-	} else if (selectgame === 2) {
-		rt = 0;
-		rtm = 0;
-		xd1 = 0;
-		xd2 = 0;
-		clearTimeout(krtt);
-		document.getElementsByClassName("xd")[0].style.display = "inline";
-		document.getElementsByClassName("xd")[1].style.display = "inline";
-		document.getElementsByClassName("xd")[2].style.display = "inline";
-		document.getElementsByClassName("xd")[3].style.display = "none";
-		document.getElementsByClassName("card")[0].style.display = "inline-block";
-		document.getElementsByClassName("card")[1].style.display = "inline-block";
-		document.getElementsByClassName("card")[5].style.display = "inline-block";
-		document.getElementsByClassName("card")[6].style.display = "inline-block";
-		document.getElementsByClassName("card")[2].style.display = "none";
-		document.getElementsByClassName("card")[3].style.display = "none";
-		document.getElementsByClassName("card")[4].style.display = "none";
-		document.getElementsByClassName("card")[7].style.display = "none";
-		document.getElementsByClassName("card")[8].style.display = "none";
-		document.getElementsByClassName("card")[9].style.display = "none";
-		ccard1();
-		document.getElementsByClassName("card1")[0].setAttribute("src", "./img/b2fv.gif");
-		document.getElementsByClassName("card1")[0].addEventListener("click", ccard1);
-		ccard2();
-		document.getElementsByClassName("card2")[0].setAttribute("src", "./img/b2fv.gif");
-		document.getElementsByClassName("card2")[0].addEventListener("click", ccard2);
-		ccard3();
-		document.getElementsByClassName("card3")[0].setAttribute("src", "./img/b2fv.gif");
-		document.getElementsByClassName("card3")[0].addEventListener("click", ccard3);
-		ccard7();
-		document.getElementsByClassName("card7")[0].setAttribute("src", "./img/b2fv.gif");
-		document.getElementsByClassName("card7")[0].addEventListener("click", ccard7);
-		ccard8();
-		document.getElementsByClassName("card8")[0].setAttribute("src", "./img/b2fv.gif");
-		document.getElementsByClassName("card8")[0].addEventListener("click", ccard8);
-		ccard4();
-		document.getElementsByClassName("card4")[0].setAttribute("src", "./img/b2fv.gif");
-		ccard5();
-		document.getElementsByClassName("card5")[0].setAttribute("src", "./img/b2fv.gif");
-		ccard6();
-		document.getElementsByClassName("card6")[0].setAttribute("src", "./img/b2fv.gif");
-		ccard9();
-		document.getElementsByClassName("card9")[0].setAttribute("src", "./img/b2fv.gif");
-		ccard10();
-		document.getElementsByClassName("card10")[0].setAttribute("src", "./img/b2fv.gif");
-		krtt = setTimeout(krt, 10000);
-	} else if (selectgame === 3) {
-		arrlieng1 = [];
-		arrlieng2 = [];
-		ca7 = 0;
-		ca8 = 0;
-		ca9 = 0;
-		ca10 = 0;
-		clearTimeout(liengg);
-		document.getElementsByClassName("xd")[3].style.display = "inline";
-		document.getElementsByClassName("card")[0].style.display = "inline-block";
-		document.getElementsByClassName("card")[1].style.display = "inline-block";
-		document.getElementsByClassName("card")[2].style.display = "inline-block";
-		document.getElementsByClassName("card")[5].style.display = "inline-block";
-		document.getElementsByClassName("card")[6].style.display = "inline-block";
-		document.getElementsByClassName("card")[7].style.display = "inline-block";
-		document.getElementsByClassName("card")[3].style.display = "none";
-		document.getElementsByClassName("card")[4].style.display = "none";
-		document.getElementsByClassName("card")[8].style.display = "none";
-		document.getElementsByClassName("card")[9].style.display = "none";
-		ccard1();
-		document.getElementsByClassName("card1")[0].setAttribute("src", "./img/b2fv.gif");
-		document.getElementsByClassName("card1")[0].addEventListener("click", ccard1);
-		ccard2();
-		document.getElementsByClassName("card2")[0].setAttribute("src", "./img/b2fv.gif");
-		document.getElementsByClassName("card2")[0].addEventListener("click", ccard2);
-		ccard3();
-		document.getElementsByClassName("card3")[0].setAttribute("src", "./img/b2fv.gif");
-		document.getElementsByClassName("card3")[0].addEventListener("click", ccard3);
-		ccard4();
-		document.getElementsByClassName("card4")[0].setAttribute("src", "./img/b2fv.gif");
-		ccard5();
-		document.getElementsByClassName("card5")[0].setAttribute("src", "./img/b2fv.gif");
-		ccard6();
-		document.getElementsByClassName("card6")[0].setAttribute("src", "./img/b2fv.gif");
-		liengg = setTimeout(lieng, 10000);
+	if (money - dc <= 0 && dc > money) {
+		alert("hết tiển rồi");
+
 	}
 
+	else {
+		li1 = 0;
+		li2 = 0;
+		document.getElementsByClassName("bdmain")[0].style.display = 'none';
+		document.getElementsByClassName("statusp1")[0].innerText = "";
+		document.getElementsByClassName("statusp2")[0].innerText = "";
+		document.getElementsByClassName("status")[0].style.display = 'none';
+		document.getElementsByClassName("status")[1].style.display = 'none';
+		var fmoney = getCookie("fmoney");
+		money -= dc;
+		fmoney = money;
+		if (fmoney != null) {
+			setCookie("fmoney", fmoney, 30);
+		}
+		document.getElementById("money").innerHTML = "Số tiền của bạn:" + money;
+		card1 = Math.ceil(Math.random() * 52);
+		card2 = Math.ceil(Math.random() * 52);
+		card3 = Math.ceil(Math.random() * 52);
+		card7 = Math.ceil(Math.random() * 52);
+		card8 = Math.ceil(Math.random() * 52);
+		card4 = Math.ceil(Math.random() * 52);
+		card5 = Math.ceil(Math.random() * 52);
+		card6 = Math.ceil(Math.random() * 52);
+		card9 = Math.ceil(Math.random() * 52);
+		card10 = Math.ceil(Math.random() * 52);
+		if (selectgame === 1) {
+			document.getElementsByClassName("card")[0].style.display = "inline-block";
+			document.getElementsByClassName("card")[1].style.display = "inline-block";
+			document.getElementsByClassName("card")[2].style.display = "inline-block";
+			document.getElementsByClassName("card")[5].style.display = "inline-block";
+			document.getElementsByClassName("card")[6].style.display = "inline-block";
+			document.getElementsByClassName("card")[7].style.display = "inline-block";
+			ccard1();
+			document.getElementsByClassName("card1")[0].setAttribute("src", "./img/b2fv.gif");
+			document.getElementsByClassName("card1")[0].addEventListener("click", ccard1);
+			ccard2();
+			document.getElementsByClassName("card2")[0].setAttribute("src", "./img/b2fv.gif");
+			document.getElementsByClassName("card2")[0].addEventListener("click", ccard2);
+			ccard3();
+			document.getElementsByClassName("card3")[0].setAttribute("src", "./img/b2fv.gif");
+			document.getElementsByClassName("card3")[0].addEventListener("click", ccard3);
+			ccard4();
+			document.getElementsByClassName("card4")[0].setAttribute("src", "./img/b2fv.gif");
+			ccard5();
+			document.getElementsByClassName("card5")[0].setAttribute("src", "./img/b2fv.gif");
+			ccard6();
+			document.getElementsByClassName("card6")[0].setAttribute("src", "./img/b2fv.gif");
+			setTimeout(check, 5000);
+		} else if (selectgame === 2) {
+			rt = 0;
+			rtm = 0;
+			xd1 = 0;
+			xd2 = 0;
+			clearTimeout(krtt);
+			document.getElementsByClassName("xd")[0].style.display = "inline";
+			document.getElementsByClassName("xd")[1].style.display = "inline";
+			document.getElementsByClassName("xd")[2].style.display = "inline";
+			document.getElementsByClassName("xd")[3].style.display = "none";
+			document.getElementsByClassName("card")[0].style.display = "inline-block";
+			document.getElementsByClassName("card")[1].style.display = "inline-block";
+			document.getElementsByClassName("card")[5].style.display = "inline-block";
+			document.getElementsByClassName("card")[6].style.display = "inline-block";
+			document.getElementsByClassName("card")[2].style.display = "none";
+			document.getElementsByClassName("card")[3].style.display = "none";
+			document.getElementsByClassName("card")[4].style.display = "none";
+			document.getElementsByClassName("card")[7].style.display = "none";
+			document.getElementsByClassName("card")[8].style.display = "none";
+			document.getElementsByClassName("card")[9].style.display = "none";
+			ccard1();
+			document.getElementsByClassName("card1")[0].setAttribute("src", "./img/b2fv.gif");
+			document.getElementsByClassName("card1")[0].addEventListener("click", ccard1);
+			ccard2();
+			document.getElementsByClassName("card2")[0].setAttribute("src", "./img/b2fv.gif");
+			document.getElementsByClassName("card2")[0].addEventListener("click", ccard2);
+			ccard3();
+			document.getElementsByClassName("card3")[0].setAttribute("src", "./img/b2fv.gif");
+			document.getElementsByClassName("card3")[0].addEventListener("click", ccard3);
+			ccard7();
+			document.getElementsByClassName("card7")[0].setAttribute("src", "./img/b2fv.gif");
+			document.getElementsByClassName("card7")[0].addEventListener("click", ccard7);
+			ccard8();
+			document.getElementsByClassName("card8")[0].setAttribute("src", "./img/b2fv.gif");
+			document.getElementsByClassName("card8")[0].addEventListener("click", ccard8);
+			ccard4();
+			document.getElementsByClassName("card4")[0].setAttribute("src", "./img/b2fv.gif");
+			ccard5();
+			document.getElementsByClassName("card5")[0].setAttribute("src", "./img/b2fv.gif");
+			ccard6();
+			document.getElementsByClassName("card6")[0].setAttribute("src", "./img/b2fv.gif");
+			ccard9();
+			document.getElementsByClassName("card9")[0].setAttribute("src", "./img/b2fv.gif");
+			ccard10();
+			document.getElementsByClassName("card10")[0].setAttribute("src", "./img/b2fv.gif");
+			krtt = setTimeout(krt, 10000);
+		} else if (selectgame === 3) {
+			arrlieng1 = [];
+			arrlieng2 = [];
+			ca7 = 0;
+			ca8 = 0;
+			ca9 = 0;
+			ca10 = 0;
+			clearTimeout(liengg);
+			document.getElementsByClassName("xd")[3].style.display = "inline";
+			document.getElementsByClassName("card")[0].style.display = "inline-block";
+			document.getElementsByClassName("card")[1].style.display = "inline-block";
+			document.getElementsByClassName("card")[2].style.display = "inline-block";
+			document.getElementsByClassName("card")[5].style.display = "inline-block";
+			document.getElementsByClassName("card")[6].style.display = "inline-block";
+			document.getElementsByClassName("card")[7].style.display = "inline-block";
+			document.getElementsByClassName("card")[3].style.display = "none";
+			document.getElementsByClassName("card")[4].style.display = "none";
+			document.getElementsByClassName("card")[8].style.display = "none";
+			document.getElementsByClassName("card")[9].style.display = "none";
+			ccard1();
+			document.getElementsByClassName("card1")[0].setAttribute("src", "./img/b2fv.gif");
+			document.getElementsByClassName("card1")[0].addEventListener("click", ccard1);
+			ccard2();
+			document.getElementsByClassName("card2")[0].setAttribute("src", "./img/b2fv.gif");
+			document.getElementsByClassName("card2")[0].addEventListener("click", ccard2);
+			ccard3();
+			document.getElementsByClassName("card3")[0].setAttribute("src", "./img/b2fv.gif");
+			document.getElementsByClassName("card3")[0].addEventListener("click", ccard3);
+			ccard4();
+			document.getElementsByClassName("card4")[0].setAttribute("src", "./img/b2fv.gif");
+			ccard5();
+			document.getElementsByClassName("card5")[0].setAttribute("src", "./img/b2fv.gif");
+			ccard6();
+			document.getElementsByClassName("card6")[0].setAttribute("src", "./img/b2fv.gif");
+			liengg = setTimeout(lieng, 10000);
+		}
+	}
 
 }
 document.getElementsByClassName("xb")[0].addEventListener("click", xb);
