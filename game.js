@@ -306,13 +306,14 @@ document.getElementsByClassName("back")[0].addEventListener("click", function ()
 //
 document.getElementsByClassName("bc")[0].addEventListener("click", function () {
 	if (money - dcbc <= 0 && dcbc >= money) {
-		alert("hết tiển rồi");
-		vayno();
+		document.getElementsByClassName("modal")[0].style.display='block';
+		document.getElementsByClassName("md-nd")[0].innerText="Hết tiền rồi";
+
 
 	}
 	else {
 		if (ondc === 0) {
-			alert("Chưa đặt tiền cược");
+			document.getElementsByClassName("modal")[0].style.display='block';
 		}
 		else {
 
@@ -342,12 +343,13 @@ document.getElementsByClassName("bc")[0].addEventListener("click", function () {
 });
 document.getElementsByClassName("bc")[1].addEventListener("click", function () {
 	if (money - dcbc <= 0 && dcbc >= money) {
-		alert("hết tiển rồi");
-		vayno();
+		document.getElementsByClassName("modal")[0].style.display='block';
+		document.getElementsByClassName("md-nd")[0].innerText="Hết tiền rồi";
+	
 	}
 	else {
 		if (ondc === 0) {
-			alert("Chưa đặt tiền cược");
+			document.getElementsByClassName("modal")[0].style.display='block';
 		}
 		else {
 			if (checkbcc === 0) {
@@ -374,12 +376,13 @@ document.getElementsByClassName("bc")[1].addEventListener("click", function () {
 });
 document.getElementsByClassName("bc")[2].addEventListener("click", function () {
 	if (money - dcbc <= 0 && dcbc >= money) {
-		alert("hết tiển rồi");
-		vayno();
+		document.getElementsByClassName("modal")[0].style.display='block';
+		document.getElementsByClassName("md-nd")[0].innerText="Hết tiền rồi";
+	
 	}
 	else {
 		if (ondc === 0) {
-			alert("Chưa đặt tiền cược");
+			document.getElementsByClassName("modal")[0].style.display='block';
 		}
 		else {
 			if (checkbcc === 0) {
@@ -407,12 +410,13 @@ document.getElementsByClassName("bc")[2].addEventListener("click", function () {
 });
 document.getElementsByClassName("bc")[3].addEventListener("click", function () {
 	if (money - dcbc <= 0 && dcbc >= money) {
-		alert("hết tiển rồi");
-		vayno();
+		document.getElementsByClassName("modal")[0].style.display='block';
+		document.getElementsByClassName("md-nd")[0].innerText="Hết tiền rồi";
+	
 	}
 	else {
 		if (ondc === 0) {
-			alert("Chưa đặt tiền cược");
+			document.getElementsByClassName("modal")[0].style.display='block';
 		}
 		else {
 			if (checkbcc === 0) {
@@ -439,12 +443,13 @@ document.getElementsByClassName("bc")[3].addEventListener("click", function () {
 });
 document.getElementsByClassName("bc")[4].addEventListener("click", function () {
 	if (money - dcbc <= 0 && dcbc >= money) {
-		alert("hết tiển rồi");
-		vayno();
+		document.getElementsByClassName("modal")[0].style.display='block';
+		document.getElementsByClassName("md-nd")[0].innerText="Hết tiền rồi";
+
 	}
 	else {
 		if (ondc === 0) {
-			alert("Chưa đặt tiền cược");
+			document.getElementsByClassName("modal")[0].style.display='block';
 		}
 		else {
 			if (checkbcc === 0) {
@@ -472,12 +477,13 @@ document.getElementsByClassName("bc")[4].addEventListener("click", function () {
 });
 document.getElementsByClassName("bc")[5].addEventListener("click", function () {
 	if (money - dcbc <= 0 && dcbc >= money) {
-		alert("hết tiển rồi");
-		vayno();
+		document.getElementsByClassName("modal")[0].style.display='block';
+		document.getElementsByClassName("md-nd")[0].innerText="Hết tiền rồi";
+	
 	}
 	else {
 		if (ondc === 0) {
-			alert("Chưa đặt tiền cược");
+			document.getElementsByClassName("modal")[0].style.display='block';
 		}
 		else {
 			if (checkbcc === 0) {
@@ -833,7 +839,8 @@ function setup() {
 
 function phatbai() {
 	if (money - dc <= 0 && dc > money) {
-		alert("hết tiển rồi");
+		document.getElementsByClassName("modal")[0].style.display='block';
+		document.getElementsByClassName("md-nd")[0].innerText="Hết tiền rồi";
 		vayno();
 	}
 
@@ -1239,7 +1246,7 @@ function check() {
 			ll1 = 30;
 			document.getElementsByClassName("statusp1")[0].innerText = "Ba tiên";
 			document.getElementsByClassName("statusp2")[0].innerText = "Ba tiên";
-			alert("huề");
+		
 		}
 
 		if (pl1 != 30 && pl2 != 30) {
@@ -1522,6 +1529,11 @@ function checkxd() {
 		}
 	}
 }
+
+document.getElementsByClassName("btn-reload")[0].addEventListener("click",function() {
+	document.getElementsByClassName("modal")[0].style.display = 'none';
+});
+
 
 function vayno() {
 	if (money <= 0) {
