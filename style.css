@@ -26,6 +26,7 @@ html {
 	-o-user-select: none;
 	user-select: none;
 	overflow: hidden;
+	background-color: rgb(244, 233, 255);
 }
 
 .start {
